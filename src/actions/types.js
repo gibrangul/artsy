@@ -1,1 +1,2 @@
 export const FETCH_ARTISTS = "FETCH_ARTISTS";
+export const FETCH_EVENTS = "FETCH_EVENTS";

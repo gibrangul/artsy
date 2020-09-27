@@ -6,7 +6,7 @@ const INITIAL_STATE = {};
 export default (state = INITIAL_STATE, action) => {
   switch (action.type) {
     case FETCH_ARTISTS:
-      return { ...state, ..._.mapKeys(action.payload) };
+      return { ...state, ...action.payload };
     default:
       return state;
   }

@@ -3,6 +3,6 @@ import artistsReducer from "./artistsReducer";
 import eventsReducer from "./eventsReducer";
 
 export default combineReducers({
-  artists: artistsReducer,
+  artist: artistsReducer,
   events: eventsReducer,
 });
