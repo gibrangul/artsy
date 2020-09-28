@@ -20,7 +20,7 @@ const Events = ({ match }) => {
       <p onClick={() => history.goBack()}>Back To Search</p>
       {Object.values(events).map((item) => {
         return (
-          <p>
+          <p key={item.id}>
             {item.venue.name}
             {item.venue.city}
             {item.venue.country}
