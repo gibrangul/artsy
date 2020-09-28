@@ -10,14 +10,17 @@ const SearchBar = ({ onSearch, placeholder }) => {
   };
 
   return (
-    <form autocomplete="off" className="search-bar" onSubmit={onSubmit}>
+    <form autoComplete="off" className="search-bar" onSubmit={onSubmit}>
       <input
         name="search"
         value={searchTerm}
         onChange={(e) => setSearchTerm(e.target.value)}
         placeholder={placeholder}
+        className="input-li"
       />
-      <button type="submit">Search</button>
+      <button type="submit" className="btn btn-primary">
+        Search
+      </button>
     </form>
   );
 };

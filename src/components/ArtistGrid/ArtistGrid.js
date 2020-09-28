@@ -6,16 +6,22 @@ const ArtistGrid = ({ title, headerAction, data, artistClick }) => {
     <div className="artist-grid">
       <div className="artist-grid_header">
         <h3>{title}</h3>
-        <button onClick={headerAction}>See More</button>
+        <button onClick={headerAction} className="btn btn-link">
+          See More
+        </button>
       </div>
       <div className="artist-grid_list">
         {data.map((artist) => (
           <div
             key={artist.id}
-            onClick={(item) => artistClick(item)}
+            onClick={() => artistClick(artist)}
             className="artist-grid_list_item"
           >
-            <img alt={artist.name} src={artist.thumb_url} />
+            <img
+              alt={artist.name}
+              src={artist.thumb_url}
+              className="shadow-default"
+            />
             <div className="artist-grid_list_item_info">
               <p className="artist-grid_list_item_info_name">{artist.name}</p>
               <p className="artist-grid_list_item_info_events">

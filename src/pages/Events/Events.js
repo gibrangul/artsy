@@ -1,20 +1,29 @@
-import React, { useEffect } from "react";
-import { useHistory } from "react-router-dom";
+import React, { useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
-
-import { fetchEvents } from "../../actions";
+import { useHistory } from "react-router-dom";
+import { fetchArtist } from "../../actions";
+import bandsInTown from "../../apis/bandsInTown";
 import "./events.scss";
 
 const Events = ({ match }) => {
-  const dispatch = useDispatch();
   const history = useHistory();
-  const events = useSelector(({ events }) => events);
-
+  const dispatch = useDispatch();
+  const [events, setEvents] = useState([]);
   const artistName = match.params.artist;
-  console.log();
+
+  const artist = useSelector(({ artist }) => artist);
+
   useEffect(() => {
-    dispatch(fetchEvents(artistName));
-  }, [dispatch, artistName]);
+    if (!artist || artist.name !== artistName) {
+      dispatch(fetchArtist(artistName));
+    }
+    const fetchEvents = async () => {
+      const response = await bandsInTown.get(`/artists/${artistName}/events`);
+      setEvents(response.data);
+    };
+    fetchEvents();
+  }, [artistName, dispatch, artist]);
+  console.log(events);
   return (
     <div>
       <p onClick={() => history.goBack()}>Back To Search</p>

@@ -1,0 +1,64 @@
+.artist-card {
+  margin-top: 12px;
+  border-radius: 4px;
+  width: 340px;
+  height: 340px;
+  position: relative;
+  border: 10px solid #202026;
+  background-color: #202026;
+  transition: all 200ms ease-in-out;
+  img {
+    height: 340px;
+    width: 340px;
+    position: absolute;
+    object-fit: cover;
+    border-radius: 2px;
+  }
+  .overlay {
+    position: absolute;
+    width: 340px;
+    height: 340px;
+    background: rgb(29, 29, 29);
+    background: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 1) 10%,
+      rgba(0, 0, 0, 0) 100%
+    );
+    border-radius: 2px;
+  }
+  &-info {
+    position: absolute;
+    bottom: 0;
+    padding: 16px;
+    width: calc(100% - 32px);
+
+    &-text {
+      padding-top: 16px;
+      max-width: 328px;
+      margin-bottom: 12px;
+      h2 {
+        margin-bottom: 8px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+      a {
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        margin-bottom: 4px;
+      }
+    }
+    &-buttons {
+      display: flex;
+      align-self: flex-end;
+      .btn {
+        flex: 1;
+        border-radius: 4px;
+      }
+    }
+  }
+  &:hover {
+    transform: scale3d(1.01, 1.01, 1);
+  }
+}

@@ -6,7 +6,7 @@ const INITIAL_STATE = {};
 export default (state = INITIAL_STATE, action) => {
   switch (action.type) {
     case FETCH_EVENTS:
-      return { ...state, ..._.mapKeys(action.payload, "id") };
+      return { ..._.mapKeys(action.payload, "id") };
     default:
       return state;
   }

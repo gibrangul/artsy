@@ -12,7 +12,6 @@ html {
     margin: 0;
   }
   @media screen and (max-width: 768px) {
-    // html {
     font-size: 14px;
   }
 }
@@ -20,12 +19,28 @@ html {
 .container {
   height: 100vh;
   width: 100%;
+  overflow: scroll;
   background: rgb(24, 24, 29);
   background: linear-gradient(
     0deg,
     rgba(24, 24, 29, 1) 0%,
     rgba(0, 0, 0, 1) 100%
   );
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none;
+
+  .content {
+    padding: 0 36px;
+    @media screen and (max-width: 768px) {
+      padding: 0 18px;
+    }
+  }
 }
 
 @import "./styles/buttons.scss";
+@import "./styles/inputs.scss";
+@import "./styles/shadows.scss";
