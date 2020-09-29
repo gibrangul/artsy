@@ -34,11 +34,6 @@
     flex-direction: column;
     overflow: scroll;
     height: calc(100vh - 84px);
-    &::-webkit-scrollbar {
-      display: none;
-    }
-    -ms-overflow-style: none; /* IE and Edge */
-    scrollbar-width: none;
     .artist-grid {
       margin-top: 8px;
       margin-bottom: 40px;

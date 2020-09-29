@@ -9,7 +9,7 @@ const AppRouter = () => {
   return (
     <div>
       <Router history={history}>
-        <div className="container">
+        <div className="container no-scroll-bars">
           <Header />
           <Switch>
             <Route path="/" exact component={Home} />

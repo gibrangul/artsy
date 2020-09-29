@@ -1,3 +1,4 @@
+@import "../styles/colors.scss";
 .btn {
   cursor: pointer;
   border: none;
@@ -14,21 +15,26 @@
 }
 
 .btn-primary {
-  background-color: #5d67ff;
+  background-color: $color-primary;
+  &:hover {
+    background-color: darken($color-primary, 3%);
+  }
   &-outline {
     background: none;
-    border: 1px solid #5d67ff;
+    border: 1px solid $color-primary;
     &:hover {
-      background-color: #5d67ff;
+      background-color: $color-primary;
     }
   }
 }
 
 .btn-link {
   background: none;
-  color: #5d67ff;
+  color: $color-primary;
+  padding: 0;
   &:hover {
-    text-decoration: underline;
+    color: darken($color-primary, 3%);
+    // text-decoration: underline;
   }
 }
 

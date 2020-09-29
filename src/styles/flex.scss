@@ -1,0 +1,34 @@
+.flex-row {
+  display: flex;
+  flex-direction: row !important;
+}
+
+.flex-column {
+  display: flex;
+  flex-direction: column !important;
+}
+
+.flex-align-center {
+  align-items: center;
+}
+
+.flex-align-start {
+  align-items: flex-start;
+}
+
+.flex-center {
+  align-items: center;
+  justify-content: center;
+}
+
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
+.flex-1 {
+  flex: 1;
+}
+
+.flex-truncate {
+  min-width: 0;
+}

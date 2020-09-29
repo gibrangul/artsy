@@ -15,7 +15,13 @@ const ArtistCard = ({ artist }) => {
       <div className="artist-card-info">
         <div className="artist-card-info-text">
           <h2>{artist.name}</h2>
-          <a href={artist.facebook_page_url}>Go to Facebook Page</a>
+          <a
+            href={artist.facebook_page_url}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Go to Facebook Page
+          </a>
         </div>
         <div className="artist-card-info-buttons">
           <button

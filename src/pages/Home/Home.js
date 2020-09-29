@@ -88,7 +88,7 @@ const Home = (props) => {
         </div>
         {renderSearchCard()}
       </div>
-      <div className="suggestions">
+      <div className="suggestions no-scroll-bars">
         {searchHistory.length === 0 ? (
           <div className="artist-grid" style={{ padding: "24px" }}>
             <div className="artist-grid_header" style={{ marginBottom: 0 }}>

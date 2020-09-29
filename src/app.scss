@@ -27,12 +27,6 @@ html {
     rgba(0, 0, 0, 1) 100%
   );
 
-  &::-webkit-scrollbar {
-    display: none;
-  }
-  -ms-overflow-style: none; /* IE and Edge */
-  scrollbar-width: none;
-
   .content {
     padding: 0 36px;
     @media screen and (max-width: 768px) {
@@ -41,6 +35,17 @@ html {
   }
 }
 
+.no-scroll-bars {
+  &::-webkit-scrollbar {
+    display: none;
+  }
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none;
+}
+
+@import "./styles/margins.scss";
 @import "./styles/buttons.scss";
 @import "./styles/inputs.scss";
 @import "./styles/shadows.scss";
+@import "./styles/flex.scss";
+@import "./styles/typography.scss";
