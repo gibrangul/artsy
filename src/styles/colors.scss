@@ -1,1 +1,40 @@
 $color-primary: #5d67ff;
+$bg-dark-300: #050505;
+$bg-dark-200: #18181d;
+$bg-dark-100: #202026;
+
+$bg-light-300: #e9ecef;
+$bg-light-200: #f2f4f5;
+$bg-light-100: #ffffff;
+
+.dark-font {
+  color: #ffffff;
+}
+
+.light-font {
+  color: #050505;
+}
+
+.bg-dark-100 {
+  background-color: $bg-dark-100;
+}
+
+.bg-dark-200 {
+  background-color: $bg-dark-200;
+}
+
+.bg-dark-300 {
+  background-color: $bg-dark-300;
+}
+
+.bg-light-100 {
+  background-color: $bg-light-100;
+}
+
+.bg-light-200 {
+  background-color: $bg-light-200;
+}
+
+.bg-light-300 {
+  background-color: $bg-light-300;
+}

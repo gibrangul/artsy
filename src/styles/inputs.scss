@@ -1,13 +1,8 @@
-.input-li {
+.input {
   height: 40px;
   border: none;
-  padding: 0 38px;
+  padding: 0 12px;
   border-radius: 8px;
-  background-repeat: no-repeat;
-  background-position-x: 12px;
-  background-position-y: 12px;
-  background-color: #1d1d1d;
-  background-size: 18px;
   color: white;
   border: 1px solid #4a4b4c;
   &:focus {
@@ -17,6 +12,15 @@
     box-shadow: inset 0px 0px 7px -1px rgba(93, 103, 255, 0.45);
     border: 1px solid #5d67ff;
   }
+}
+
+.input-li {
+  // padding: 0 38px;
+  padding-left: 38px;
+  background-repeat: no-repeat;
+  background-position-x: 12px;
+  background-position-y: 12px;
+  background-size: 18px;
   @media screen and (max-width: 768px) {
     padding-right: 4px;
   }

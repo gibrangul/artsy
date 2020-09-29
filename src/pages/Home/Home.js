@@ -12,14 +12,15 @@ import "./home.scss";
 const Home = (props) => {
   const dispatch = useDispatch();
   const history = useHistory();
-  const [loading, setLoading] = useState(false);
+  const [searching, setSearching] = useState(false);
+  const [loading, setLoading] = useState(true);
   const [searchHistory, setSearchHistory] = useState(
     getSearchHistory().reverse()
   );
   const artist = useSelector(({ artist }) => artist);
 
   const renderSearchCard = () => {
-    if (artist && !loading) {
+    if (artist && !searching) {
       if (artist.error) {
         return (
           <div
@@ -36,7 +37,7 @@ const Home = (props) => {
       } else {
         return <ArtistCard artist={artist} />;
       }
-    } else if (loading) {
+    } else if (searching) {
       return (
         <div
           className="artist-card"
@@ -52,7 +53,7 @@ const Home = (props) => {
             radius={2}
             margin={2}
             color={"#5d67ff"}
-            loading={loading}
+            loading={searching}
           />
         </div>
       );
@@ -60,16 +61,22 @@ const Home = (props) => {
   };
 
   useEffect(() => {
+    setTimeout(() => {
+      setLoading(false);
+    }, 200);
+  }, []);
+
+  useEffect(() => {
     if (artist) {
       setTimeout(() => {
-        setLoading(false);
+        setSearching(false);
         setSearchHistory(getSearchHistory().reverse());
       }, [500]);
     }
   }, [artist]);
 
   return (
-    <div className="home-page content">
+    <div className={`home-page content ${loading ? "hide" : "show"}`}>
       <div className="search">
         <div className="search-form">
           <h1>
@@ -80,7 +87,7 @@ const Home = (props) => {
           <h2>Search below to get started.</h2>
           <SearchBar
             onSearch={(value) => {
-              setLoading(true);
+              setSearching(true);
               dispatch(fetchArtist(value));
             }}
             placeholder={"Search for an Artist"}

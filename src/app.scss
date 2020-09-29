@@ -43,9 +43,21 @@ html {
   scrollbar-width: none;
 }
 
+.show {
+  transform: translate3d(0, 0, 0);
+  opacity: 1;
+}
+
+.hide {
+  transform: translate3d(0, 100px, 0);
+  opacity: 0;
+}
+
 @import "./styles/margins.scss";
 @import "./styles/buttons.scss";
+@import "./styles/icons.scss";
 @import "./styles/inputs.scss";
 @import "./styles/shadows.scss";
 @import "./styles/flex.scss";
 @import "./styles/typography.scss";
+@import "./styles/paddings.scss";

@@ -2,7 +2,9 @@ import moment from "moment";
 import React from "react";
 import googleMapLink from "../../apis/googleMapLink";
 import locationIcon from "../../images/location-icon.png";
+import calendarIcon from "../../images/calendar-icon.png";
 import "./eventsgrid.scss";
+import { dateSuperScript } from "../../utils/general";
 
 const EventsGrid = ({ events }) => {
   return (
@@ -13,18 +15,31 @@ const EventsGrid = ({ events }) => {
         const month = eventDate.format("MMMM");
         const year = eventDate.format("YYYY");
         return (
-          <div className="events-grid_item">
-            <div className="events-grid_item_header">
-              <div className="events-grid_item_header_date">
-                <h1>{day}</h1>
+          <div className="events-grid_item mb-24 bg-dark-200">
+            <div className="bg-dark-100 pv-12 ph-16 mb-12">
+              <div className="flex-row flex-align-center">
+                <img
+                  src={calendarIcon}
+                  alt="location"
+                  className="icon-24 mr-12"
+                />
+                <h1 className="semi-bold">
+                  {day}
+                  <sup className="normal-font">{dateSuperScript(day)}</sup>
+                </h1>
+                <div className="divider ml-16 mr-16" />
                 <div className="flex-column">
-                  <p>{month}</p>
+                  <p className="bold mb-4">{month}</p>
                   <p>{year}</p>
                 </div>
               </div>
             </div>
-            <div className="events-grid_item_content mb-16">
-              <img src={locationIcon} alt="location" />
+            <div className="flex-row ph-16 mb-16">
+              <img
+                src={locationIcon}
+                alt="location"
+                className="icon-24 mt-4 mr-12"
+              />
               <div className="flex-column flex-1 flex-truncate">
                 <div className="flex-column flex-align-start mb-8">
                   <p className="bold mb-2">Event Location</p>
@@ -54,7 +69,7 @@ const EventsGrid = ({ events }) => {
               </div>
             </div>
             <a href={`${url}`} target="_blank" rel="noopener noreferrer">
-              <button className="btn btn-primary flex-1">Book Now</button>
+              <button className="btn btn-primary">Book Now</button>
             </a>
           </div>
         );

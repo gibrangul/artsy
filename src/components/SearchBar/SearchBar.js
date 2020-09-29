@@ -6,6 +6,7 @@ const SearchBar = ({ onSearch, placeholder }) => {
 
   const onSubmit = (e) => {
     e.preventDefault();
+    if (searchTerm === "") return;
     onSearch(searchTerm);
   };
 
@@ -16,7 +17,7 @@ const SearchBar = ({ onSearch, placeholder }) => {
         value={searchTerm}
         onChange={(e) => setSearchTerm(e.target.value)}
         placeholder={placeholder}
-        className="input-li"
+        className="input input-li bg-dark-200"
       />
       <button type="submit" className="btn btn-primary">
         Search

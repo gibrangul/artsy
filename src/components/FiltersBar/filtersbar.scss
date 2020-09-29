@@ -1,0 +1,11 @@
+.filters-bar {
+  display: flex;
+  input {
+    flex: 1;
+    background-image: url("../../images/location-icon.png");
+  }
+
+  &_buttons {
+    display: flex;
+  }
+}

@@ -3,6 +3,7 @@
 .home-page {
   display: flex;
   justify-content: center;
+  transition: all 200ms ease-in-out;
   .search {
     display: flex;
     flex-direction: column;
