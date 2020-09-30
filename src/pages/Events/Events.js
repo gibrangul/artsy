@@ -1,7 +1,13 @@
 import React, { useEffect, useState, Fragment } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { useHistory } from "react-router-dom";
-import { fetchArtist } from "../../actions";
+import {
+  fetchArtist,
+  fetchSearchHistory,
+  fetchFavorites,
+  addToFavorites,
+  removeFromFavorites,
+} from "../../actions";
 import bandsInTown from "../../apis/bandsInTown";
 import ArtistCard from "../../components/ArtistCard/ArtistCard";
 import EventsGrid from "../../components/EventsGrid/EventsGrid";
@@ -18,6 +24,7 @@ const Events = ({ match }) => {
   const artistName = match.params.artist;
 
   const artist = useSelector(({ artist }) => artist);
+  const favorites = useSelector(({ favorites }) => favorites);
 
   const [filters, setFilters] = useState({
     location: "",
@@ -28,6 +35,8 @@ const Events = ({ match }) => {
   const filteredEvents = eventsSelector(events, filters);
 
   useEffect(() => {
+    dispatch(fetchSearchHistory());
+    dispatch(fetchFavorites());
     if (!artist || artist.name !== artistName) {
       dispatch(fetchArtist(artistName));
     }
@@ -36,7 +45,7 @@ const Events = ({ match }) => {
       setEvents(response.data);
       setTimeout(() => {
         setLoading(false);
-      }, 200);
+      }, 500);
     };
     fetchEvents();
   }, [artistName, dispatch, artist]);
@@ -56,7 +65,14 @@ const Events = ({ match }) => {
           left: 50%;
         `}
       />
-      <div className={`events-page content ${loading ? "hide" : "show"}`}>
+      <div
+        className={`events-page content ${loading ? "hide" : "show"}`}
+        style={
+          {
+            // backgroundImage: ''
+          }
+        }
+      >
         <div className="events-page_container">
           <div className="events-page_container_left mr-24">
             <div className="events-page_container_left_back mb-12">
@@ -69,8 +85,14 @@ const Events = ({ match }) => {
                 <ArtistCard
                   artist={artist}
                   favorite={{
-                    liked: true,
-                    onClick: () => console.log("clicked"),
+                    liked: favorites[artist.id] ? true : false,
+                    onClick: () => {
+                      if (!favorites[artist.id]) {
+                        dispatch(addToFavorites(artist));
+                      } else {
+                        dispatch(removeFromFavorites(artist.id));
+                      }
+                    },
                   }}
                 />
               </Fragment>

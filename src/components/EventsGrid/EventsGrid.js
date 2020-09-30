@@ -9,13 +9,13 @@ import { dateSuperScript } from "../../utils/general";
 const EventsGrid = ({ events }) => {
   return (
     <div className="events-grid no-scroll-bars">
-      {events.map(({ datetime, venue, url }) => {
+      {events.map(({ id, datetime, venue, url }) => {
         const eventDate = moment(datetime);
         const day = eventDate.format("DD");
         const month = eventDate.format("MMMM");
         const year = eventDate.format("YYYY");
         return (
-          <div className="events-grid_item mb-24 bg-dark-200">
+          <div key={id} className="events-grid_item mb-24 bg-dark-200">
             <div className="bg-dark-100 pv-12 ph-16 mb-12">
               <div className="flex-row flex-align-center">
                 <img

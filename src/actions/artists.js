@@ -1,5 +1,10 @@
+import moment from "moment";
 import bandsInTown from "../apis/bandsInTown";
-import { FETCH_ARTIST, FETCH_ARTIST_ERROR } from "./types";
+import {
+  ADD_TO_SEARCH_HISTORY,
+  FETCH_ARTIST,
+  FETCH_ARTIST_ERROR,
+} from "./types";
 
 export const fetchArtist = (name) => async (dispatch, getState) => {
   const { searchHistory } = getState();
@@ -9,10 +14,14 @@ export const fetchArtist = (name) => async (dispatch, getState) => {
       throw new Error("Artist not found!");
     }
 
-    const searchHistoryFiltered = searchHistory.filter(
+    const searchHistoryFiltered = Object.values(searchHistory).filter(
       ({ id }) => id !== response.data.id
     );
-    searchHistoryFiltered.push(response.data);
+    const artist = {
+      ...response.data,
+      searchDate: moment().unix(),
+    };
+    searchHistoryFiltered.push(artist);
     window.localStorage.setItem(
       "searchHistory",
       JSON.stringify(searchHistoryFiltered)
@@ -20,7 +29,11 @@ export const fetchArtist = (name) => async (dispatch, getState) => {
 
     dispatch({
       type: FETCH_ARTIST,
-      payload: response.data,
+      payload: artist,
+    });
+    dispatch({
+      type: ADD_TO_SEARCH_HISTORY,
+      payload: artist,
     });
   } catch (error) {
     dispatch({

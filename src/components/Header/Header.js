@@ -7,7 +7,6 @@ import "./header.scss";
 const Header = (props) => {
   const location = useLocation();
   const imageRef = useRef(null);
-  console.log(location);
   return (
     <div className="header-container">
       <div className="header">

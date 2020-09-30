@@ -2,7 +2,13 @@ import React, { useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { useHistory } from "react-router-dom";
 import { ScaleLoader } from "react-spinners";
-import { fetchArtist, fetchSearchHistory } from "../../actions";
+import {
+  addToFavorites,
+  fetchArtist,
+  fetchFavorites,
+  fetchSearchHistory,
+  removeFromFavorites,
+} from "../../actions";
 import ArtistCard from "../../components/ArtistCard/ArtistCard";
 import ArtistGrid from "../../components/ArtistGrid/ArtistGrid";
 import SearchBar from "../../components/SearchBar/SearchBar";
@@ -11,40 +17,51 @@ import "./home.scss";
 const Home = (props) => {
   const dispatch = useDispatch();
   const history = useHistory();
+
   const [searching, setSearching] = useState(false);
   const [loading, setLoading] = useState(true);
 
   const artist = useSelector(({ artist }) => artist);
   const searchHistory = useSelector(({ searchHistory }) => searchHistory);
+  const favorites = useSelector(({ favorites }) => favorites);
+
+  useEffect(() => {
+    setTimeout(() => {
+      dispatch(fetchSearchHistory());
+      dispatch(fetchFavorites());
+      setLoading(false);
+    }, 200);
+  }, [dispatch]);
+
+  useEffect(() => {
+    if (artist) setTimeout(() => setSearching(false), 200);
+  }, [artist]);
+
+  const onSearch = (value) => {
+    setSearching(true);
+    dispatch(fetchArtist(value));
+  };
 
   const renderSearchCard = () => {
     if (artist && !searching) {
-      if (artist.error) {
-        return (
-          <div
-            className="artist-card"
-            style={{
-              display: "flex",
-              justifyContent: "center",
-              alignItems: "center",
-            }}
-          >
-            {artist.error} Please Try again.
-          </div>
-        );
-      } else {
-        return <ArtistCard artist={artist} />;
-      }
+      return (
+        <ArtistCard
+          artist={artist}
+          favorite={{
+            liked: favorites[artist.id] ? true : false,
+            onClick: () => {
+              if (!favorites[artist.id]) {
+                dispatch(addToFavorites(artist));
+              } else {
+                dispatch(removeFromFavorites(artist.id));
+              }
+            },
+          }}
+        />
+      );
     } else if (searching) {
       return (
-        <div
-          className="artist-card"
-          style={{
-            display: "flex",
-            justifyContent: "center",
-            alignItems: "center",
-          }}
-        >
+        <div className="artist-card flex-row flex-center">
           <ScaleLoader
             height={35}
             width={4}
@@ -58,20 +75,11 @@ const Home = (props) => {
     }
   };
 
-  useEffect(() => {
-    setTimeout(() => {
-      dispatch(fetchSearchHistory());
-      setLoading(false);
-    }, 200);
-  }, []);
+  const sortByLikeDate = (artists) =>
+    artists.sort((a, b) => (a.addDate < b.addDate ? 1 : -1));
 
-  useEffect(() => {
-    if (artist) {
-      setTimeout(() => {
-        setSearching(false);
-      }, [500]);
-    }
-  }, [artist]);
+  const sortBySearchDate = (artists) =>
+    artists.sort((a, b) => (a.searchDate < b.searchDate ? 1 : -1));
 
   return (
     <div className={`home-page content ${loading ? "hide" : "show"}`}>
@@ -83,13 +91,7 @@ const Home = (props) => {
             Favorite <span>Artists</span>.
           </h1>
           <h2>Search below to get started.</h2>
-          <SearchBar
-            onSearch={(value) => {
-              setSearching(true);
-              dispatch(fetchArtist(value));
-            }}
-            placeholder={"Search for an Artist"}
-          />
+          <SearchBar onSearch={onSearch} placeholder={"Search for an Artist"} />
         </div>
         {renderSearchCard()}
       </div>
@@ -103,8 +105,8 @@ const Home = (props) => {
         ) : (
           <ArtistGrid
             title="Recent Searches"
-            headerAction={() => console.log("clicked")}
-            data={searchHistory.slice(0, 5)}
+            headerAction={() => history.push("/searchHistory")}
+            data={sortBySearchDate(Object.values(searchHistory)).slice(0, 5)}
             artistClick={(artist) => history.push(`/${artist.name}/events`)}
           />
         )}
@@ -117,8 +119,8 @@ const Home = (props) => {
         ) : (
           <ArtistGrid
             title="Favorites"
-            headerAction={() => console.log("clicked")}
-            data={searchHistory.slice(0, 5)}
+            headerAction={() => history.push("/favorites")}
+            data={sortByLikeDate(Object.values(favorites)).slice(0, 5)}
             artistClick={(artist) => history.push(`/${artist.name}/events`)}
           />
         )}

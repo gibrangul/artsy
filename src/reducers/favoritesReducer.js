@@ -1,20 +1,20 @@
 import _ from "lodash";
 import {
-  ADD_TO_SEARCH_HISTORY,
-  CLEAR_SEARCH_HISTORY,
-  FETCH_SEARCH_HISTORY,
+  ADD_TO_FAVORITES,
+  FETCH_FAVORITES,
+  REMOVE_FROM_FAVORITES,
 } from "../actions/types";
 
 const INITIAL_STATE = {};
 
 export default (state = INITIAL_STATE, action) => {
   switch (action.type) {
-    case FETCH_SEARCH_HISTORY:
+    case FETCH_FAVORITES:
       return { ...state, ..._.mapKeys(action.payload, "id") };
-    case ADD_TO_SEARCH_HISTORY:
+    case ADD_TO_FAVORITES:
       return { ...state, [action.payload.id]: action.payload };
-    case CLEAR_SEARCH_HISTORY:
-      return INITIAL_STATE;
+    case REMOVE_FROM_FAVORITES:
+      return _.omit(state, action.payload);
     default:
       return state;
   }

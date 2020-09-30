@@ -1,5 +1,6 @@
 import React from "react";
 import "./artistgrid.scss";
+import ArtistGridItem from "./ArtistGridItem";
 
 const ArtistGrid = ({ title, headerAction, data, artistClick }) => {
   return (
@@ -11,24 +12,12 @@ const ArtistGrid = ({ title, headerAction, data, artistClick }) => {
         </button>
       </div>
       <div className="artist-grid_list">
-        {data.reverse().map((artist) => (
-          <div
+        {data.map((artist) => (
+          <ArtistGridItem
             key={artist.id}
+            artist={artist}
             onClick={() => artistClick(artist)}
-            className="artist-grid_list_item"
-          >
-            <img
-              alt={artist.name}
-              src={artist.thumb_url}
-              className="shadow-default"
-            />
-            <div className="artist-grid_list_item_info">
-              <p className="artist-grid_list_item_info_name">{artist.name}</p>
-              <p className="artist-grid_list_item_info_events">
-                {artist.upcoming_event_count} Events
-              </p>
-            </div>
-          </div>
+          />
         ))}
       </div>
     </div>

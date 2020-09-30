@@ -1,4 +1,3 @@
-import _ from "lodash";
 import { FETCH_ARTIST, FETCH_ARTIST_ERROR } from "../actions/types";
 
 const INITIAL_STATE = null;

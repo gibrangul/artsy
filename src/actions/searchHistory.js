@@ -16,7 +16,7 @@ export const clearSearchHistory = () => {
   };
 };
 
-const getSearchHistory = () => {
+export const getSearchHistory = () => {
   const searchStorage = window.localStorage.getItem("searchHistory");
   const searchHistory = searchStorage ? JSON.parse(searchStorage) : [];
   return searchHistory;
