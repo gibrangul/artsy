@@ -11,7 +11,7 @@ const ArtistGrid = ({ title, headerAction, data, artistClick }) => {
         </button>
       </div>
       <div className="artist-grid_list">
-        {data.map((artist) => (
+        {data.reverse().map((artist) => (
           <div
             key={artist.id}
             onClick={() => artistClick(artist)}

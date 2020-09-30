@@ -2,11 +2,10 @@ import React, { useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { useHistory } from "react-router-dom";
 import { ScaleLoader } from "react-spinners";
-import { fetchArtist } from "../../actions";
+import { fetchArtist, fetchSearchHistory } from "../../actions";
 import ArtistCard from "../../components/ArtistCard/ArtistCard";
 import ArtistGrid from "../../components/ArtistGrid/ArtistGrid";
 import SearchBar from "../../components/SearchBar/SearchBar";
-import getSearchHistory from "../../utils/getSearchHistory";
 import "./home.scss";
 
 const Home = (props) => {
@@ -14,10 +13,9 @@ const Home = (props) => {
   const history = useHistory();
   const [searching, setSearching] = useState(false);
   const [loading, setLoading] = useState(true);
-  const [searchHistory, setSearchHistory] = useState(
-    getSearchHistory().reverse()
-  );
+
   const artist = useSelector(({ artist }) => artist);
+  const searchHistory = useSelector(({ searchHistory }) => searchHistory);
 
   const renderSearchCard = () => {
     if (artist && !searching) {
@@ -62,6 +60,7 @@ const Home = (props) => {
 
   useEffect(() => {
     setTimeout(() => {
+      dispatch(fetchSearchHistory());
       setLoading(false);
     }, 200);
   }, []);
@@ -70,7 +69,6 @@ const Home = (props) => {
     if (artist) {
       setTimeout(() => {
         setSearching(false);
-        setSearchHistory(getSearchHistory().reverse());
       }, [500]);
     }
   }, [artist]);

@@ -1,7 +1,8 @@
 import { combineReducers } from "redux";
 import artistsReducer from "./artistsReducer";
-import eventsReducer from "./eventsReducer";
+import searchHistoryReducer from "./searchHistoryReducer";
 
 export default combineReducers({
   artist: artistsReducer,
+  searchHistory: searchHistoryReducer,
 });

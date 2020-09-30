@@ -36,7 +36,7 @@ const Events = ({ match }) => {
       setEvents(response.data);
       setTimeout(() => {
         setLoading(false);
-      }, 500);
+      }, 200);
     };
     fetchEvents();
   }, [artistName, dispatch, artist]);
@@ -58,13 +58,23 @@ const Events = ({ match }) => {
       />
       <div className={`events-page content ${loading ? "hide" : "show"}`}>
         <div className="events-page_container">
-          <div className="events-page_container_left">
+          <div className="events-page_container_left mr-24">
             <div className="events-page_container_left_back mb-12">
               <button className="btn btn-link" onClick={() => history.goBack()}>
                 Back To Search
               </button>
             </div>
-            {artist && <ArtistCard artist={artist} />}
+            {artist && (
+              <Fragment>
+                <ArtistCard
+                  artist={artist}
+                  favorite={{
+                    liked: true,
+                    onClick: () => console.log("clicked"),
+                  }}
+                />
+              </Fragment>
+            )}
           </div>
           <div className="events-page_container_right">
             <FiltersBar onFilter={(filter) => setFilters(filter)} />

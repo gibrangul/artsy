@@ -1,21 +1,25 @@
 import bandsInTown from "../apis/bandsInTown";
-import getSearchHistory from "../utils/getSearchHistory";
-import { FETCH_ARTISTS, FETCH_ARTIST_ERROR } from "./types";
+import { FETCH_ARTIST, FETCH_ARTIST_ERROR } from "./types";
 
-export const fetchArtist = (name) => async (dispatch) => {
+export const fetchArtist = (name) => async (dispatch, getState) => {
+  const { searchHistory } = getState();
   try {
     const response = await bandsInTown.get(`/artists/${name}`);
     if (!response.data.name) {
       throw new Error("Artist not found!");
     }
-    const searchHistory = getSearchHistory().filter(
+
+    const searchHistoryFiltered = searchHistory.filter(
       ({ id }) => id !== response.data.id
     );
-    searchHistory.push(response.data);
-    window.localStorage.setItem("searchHistory", JSON.stringify(searchHistory));
+    searchHistoryFiltered.push(response.data);
+    window.localStorage.setItem(
+      "searchHistory",
+      JSON.stringify(searchHistoryFiltered)
+    );
 
     dispatch({
-      type: FETCH_ARTISTS,
+      type: FETCH_ARTIST,
       payload: response.data,
     });
   } catch (error) {

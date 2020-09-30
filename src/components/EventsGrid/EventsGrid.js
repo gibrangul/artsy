@@ -69,7 +69,7 @@ const EventsGrid = ({ events }) => {
               </div>
             </div>
             <a href={`${url}`} target="_blank" rel="noopener noreferrer">
-              <button className="btn btn-primary">Book Now</button>
+              <button className="btn bg-dark-100">Book Now</button>
             </a>
           </div>
         );

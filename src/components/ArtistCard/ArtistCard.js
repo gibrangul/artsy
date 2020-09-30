@@ -1,8 +1,10 @@
 import React from "react";
 import { useHistory } from "react-router-dom";
 import "./artistcard.scss";
+import likeIconRed from "../../images/like-icon-red.png";
+import likeIconFilledRed from "../../images/like-icon-filled-red.png";
 
-const ArtistCard = ({ artist }) => {
+const ArtistCard = ({ artist, favorite }) => {
   const history = useHistory();
   return (
     <div className="artist-card">
@@ -11,7 +13,20 @@ const ArtistCard = ({ artist }) => {
         src={artist.image_url}
         className="shadow-default"
       />
-      <div className="overlay" />
+      <div className="overlay flex-row flex-center">
+        {favorite && (
+          <button
+            onClick={favorite.onClick}
+            className="btn btn-white-outline btn-round-icon icon-72 mb-16"
+            style={{
+              backgroundImage: favorite.liked
+                ? `url(${likeIconFilledRed})`
+                : `url(${likeIconRed})`,
+            }}
+          />
+        )}
+      </div>
+
       <div className="artist-card-info">
         <div className="artist-card-info-text">
           <h2>{artist.name}</h2>
