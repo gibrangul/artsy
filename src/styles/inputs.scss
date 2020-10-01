@@ -12,6 +12,10 @@
     box-shadow: inset 0px 0px 7px -1px rgba(93, 103, 255, 0.45);
     border: 1px solid #5d67ff;
   }
+
+  &::placeholder {
+    color: #a9a9a9;
+  }
 }
 
 .input-li {
@@ -19,8 +23,8 @@
   padding-left: 38px;
   background-repeat: no-repeat;
   background-position-x: 12px;
-  background-position-y: 12px;
-  background-size: 18px;
+  background-position-y: 10px;
+  background-size: 20px;
   @media screen and (max-width: 768px) {
     padding-right: 4px;
   }

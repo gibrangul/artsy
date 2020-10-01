@@ -54,6 +54,12 @@
   }
 }
 
+.btn-hover-primary {
+  &:hover {
+    background-color: $color-primary;
+  }
+}
+
 .btn-link {
   background: none;
   color: $color-primary;

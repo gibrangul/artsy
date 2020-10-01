@@ -1,11 +1,10 @@
 import React from "react";
 import { useHistory } from "react-router-dom";
-import { ScaleLoader } from "react-spinners";
 import likeIconFilledRed from "../../images/like-icon-filled-red.png";
 import likeIconRed from "../../images/like-icon-red.png";
 import "./artistcard.scss";
 
-const ArtistCard = ({ artist, favorite, loading }) => {
+const ArtistCard = ({ artist, favorite }) => {
   const history = useHistory();
 
   const {

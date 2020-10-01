@@ -10,3 +10,11 @@ export const dateSuperScript = (day) => {
       return "th";
   }
 };
+
+export const sortASC = (data, col) => {
+  return data.sort((a, b) => (a[col] > b[col] ? 1 : -1));
+};
+
+export const sortDSC = (data, col) => {
+  return data.sort((a, b) => (a[col] < b[col] ? 1 : -1));
+};

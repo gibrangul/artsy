@@ -10,22 +10,21 @@ export const fetchArtist = (name) => async (dispatch, getState) => {
   const { searchHistory } = getState();
   try {
     const response = await bandsInTown.get(`/artists/${name}`);
-    if (!response.data.name) {
+
+    if (response.data === "") {
       throw new Error("Artist not found!");
     }
-
-    const searchHistoryFiltered = Object.values(searchHistory).filter(
-      ({ id }) => id !== response.data.id
-    );
     const artist = {
       ...response.data,
       searchDate: moment().unix(),
     };
-    searchHistoryFiltered.push(artist);
-    window.localStorage.setItem(
-      "searchHistory",
-      JSON.stringify(searchHistoryFiltered)
-    );
+
+    const searchHistoryFiltered = Object.values({
+      ...searchHistory,
+      [artist.id]: artist,
+    });
+
+    setSearchHistory(searchHistoryFiltered);
 
     dispatch({
       type: FETCH_ARTIST,
@@ -41,4 +40,11 @@ export const fetchArtist = (name) => async (dispatch, getState) => {
       payload: error.message,
     });
   }
+};
+
+const setSearchHistory = (searchHistory) => {
+  return window.localStorage.setItem(
+    "searchHistory",
+    JSON.stringify(searchHistory)
+  );
 };
