@@ -1,3 +1,4 @@
+@import "./styles/colors.scss";
 html {
   font-family: "Open Sans", Helvetica, sans-serif;
   font-size: 16px;
@@ -32,8 +33,12 @@ html {
     background-repeat: no-repeat;
     color: white;
     a {
+      color: white;
+      &:hover {
+        color: $color-primary;
+      }
       &:visited {
-        color: white;
+        color: none;
       }
     }
   }
@@ -57,10 +62,20 @@ html {
     }
   }
   .content {
+    display: flex;
+    justify-content: center;
     padding: 0 36px;
+    transition: all 200ms ease-in-out;
     @media screen and (max-width: 768px) {
       padding: 0 18px;
     }
+  }
+
+  .page-container {
+    display: flex;
+    justify-content: center;
+    max-width: 1280px;
+    width: 100%;
   }
 }
 

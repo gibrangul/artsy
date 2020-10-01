@@ -2,6 +2,7 @@ import {
   ADD_TO_FAVORITES,
   FETCH_FAVORITES,
   REMOVE_FROM_FAVORITES,
+  CLEAR_FAVORITES,
 } from "./types";
 import moment from "moment";
 
@@ -10,6 +11,13 @@ export const fetchFavorites = () => {
   return {
     type: FETCH_FAVORITES,
     payload: favorites,
+  };
+};
+
+export const clearFavorites = () => {
+  clearLocalFavorites();
+  return {
+    type: CLEAR_FAVORITES,
   };
 };
 
@@ -41,4 +49,8 @@ const getFavorites = () => {
 
 const setFavorites = (favorites) => {
   return window.localStorage.setItem("favorites", JSON.stringify(favorites));
+};
+
+const clearLocalFavorites = () => {
+  return window.localStorage.removeItem("favorites");
 };

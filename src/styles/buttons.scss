@@ -70,6 +70,14 @@
   }
 }
 
+a.btn-link {
+  color: $color-primary;
+
+  &:visited {
+    color: $color-primary;
+  }
+}
+
 .btn-large {
   height: 48px;
 }

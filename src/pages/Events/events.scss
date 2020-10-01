@@ -1,27 +1,20 @@
 .events-page {
-  position: relative;
-  transition: all 200ms ease-in-out;
-
-  &_container {
-    display: flex;
-    max-width: 1280px;
-    width: 100%;
-    &_left_header {
+  .sidebar {
+    &_header {
       display: flex;
       height: 54px;
       align-items: center;
     }
-
-    &_right {
-      max-width: 896px;
-      flex: 1;
-      .filters-bar {
-        align-items: center;
-        height: 54px;
-        padding-bottom: 12px;
-        .btn {
-          height: 42px;
-        }
+  }
+  .detail {
+    max-width: 896px;
+    flex: 1;
+    .filters-bar {
+      align-items: center;
+      height: 54px;
+      padding-bottom: 12px;
+      .btn {
+        height: 42px;
       }
     }
   }
@@ -36,33 +29,31 @@
 
 @media screen and (max-width: 1092px) {
   .events-page {
-    &_container {
-      &_right {
-        .filters-bar {
-          flex-direction: column;
-          height: 108px;
-          margin-bottom: 12px;
-          .input {
-            width: calc(100% - 50px);
-            flex: unset;
-            margin-bottom: 16px;
-            margin-right: 0;
-            margin-top: 8px;
-          }
+    .detail {
+      .filters-bar {
+        flex-direction: column;
+        height: 108px;
+        margin-bottom: 12px;
+        .input {
+          width: calc(100% - 50px);
+          flex: unset;
+          margin-bottom: 16px;
+          margin-right: 0;
+          margin-top: 8px;
+        }
 
-          &_buttons {
-            width: 100%;
-            .react-datepicker-wrapper {
-              flex: 1;
-              input {
-                width: auto;
-              }
+        &_buttons {
+          width: 100%;
+          .react-datepicker-wrapper {
+            flex: 1;
+            input {
+              width: auto;
             }
           }
         }
-        .events-grid {
-          height: calc(100vh - 216px);
-        }
+      }
+      .events-grid {
+        height: calc(100vh - 216px);
       }
     }
   }
@@ -70,36 +61,35 @@
 
 @media screen and (max-width: 864px) {
   .events-page {
-    &_container {
+    .page-container {
+      flex-direction: column;
+    }
+    .sidebar {
+      display: flex;
       flex-direction: column;
       width: 100%;
-      &_left {
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-        .artist-card {
-          margin-right: 0;
-          width: calc(100% - 20px);
-          margin-bottom: 24px;
-          img,
-          .overlay {
-            width: 100%;
-          }
+      .artist-card {
+        margin-right: 0;
+        width: calc(100% - 20px);
+        margin-bottom: 16px;
+        img,
+        .overlay {
+          width: 100%;
         }
-      }
-      &_right {
-        .filters-bar_buttons {
-          .react-datepicker-wrapper:first-child {
-            margin-right: 24px;
-            @media screen and (max-width: 699px) {
-              margin-right: 8px;
-            }
-          }
-        }
-      }
-      .events-grid {
-        overflow: unset;
       }
     }
+  }
+  .detail {
+    .filters-bar_buttons {
+      .react-datepicker-wrapper:first-child {
+        margin-right: 24px;
+        @media screen and (max-width: 699px) {
+          margin-right: 8px;
+        }
+      }
+    }
+  }
+  .events-grid {
+    overflow: unset;
   }
 }

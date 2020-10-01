@@ -1,6 +1,6 @@
 import React, { Fragment, useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { useHistory } from "react-router-dom";
+import { useHistory, useParams } from "react-router-dom";
 import {
   addToFavorites,
   fetchArtist,
@@ -16,14 +16,15 @@ import SiteLoader from "../../components/SiteLoader";
 import "./events.scss";
 import eventsSelector from "./eventsSelector";
 
-const Events = ({ match }) => {
+const Events = (props) => {
   const history = useHistory();
   const dispatch = useDispatch();
+  const params = useParams();
 
   const [events, setEvents] = useState([]);
   const [loading, setLoading] = useState(true);
 
-  const artistName = match.params.artist;
+  const artistName = params.artist;
 
   const artist = useSelector(({ artist }) => artist);
   const favorites = useSelector(({ favorites }) => favorites);
@@ -50,7 +51,7 @@ const Events = ({ match }) => {
       setEvents(response.data);
       setTimeout(() => {
         setLoading(false);
-      }, 500);
+      }, 400);
     };
     fetchEvents();
   }, [artistName, dispatch, artist]);
@@ -71,9 +72,13 @@ const Events = ({ match }) => {
           loading ? "hide" : "show"
         } flex-column flex-center`}
       >
-        <div className="events-page_container">
-          <div className="events-page_container_left mr-24">
-            <div className="events-page_container_left_header mb-12">
+        <div className="page-container">
+          <div className="sidebar mr-24">
+            <div
+              className={`sidebar_header mb-12 ${
+                events.length === 0 && "flex-justify-center"
+              }`}
+            >
               <button className="btn btn-link" onClick={() => history.goBack()}>
                 Back To Search
               </button>
@@ -87,15 +92,20 @@ const Events = ({ match }) => {
                 }}
               />
             )}
+            {events.length === 0 && (
+              <h2 className="text-center pv-16">No Upcoming Events</h2>
+            )}
           </div>
-          <div className="events-page_container_right">
-            <FiltersBar
-              onFilter={(filter) =>
-                setFilters((prevFilters) => ({ ...prevFilters, ...filter }))
-              }
-            />
-            <EventsGrid events={filteredEvents} />
-          </div>
+          {events.length > 0 && (
+            <div className="detail">
+              <FiltersBar
+                onFilter={(filter) =>
+                  setFilters((prevFilters) => ({ ...prevFilters, ...filter }))
+                }
+              />
+              <EventsGrid events={filteredEvents} />
+            </div>
+          )}
         </div>
       </div>
     </Fragment>

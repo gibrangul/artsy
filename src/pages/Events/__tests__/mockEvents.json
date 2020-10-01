@@ -1,0 +1,1057 @@
+[
+  {
+    "offers": [
+      {
+        "type": "Tickets",
+        "url": "https://www.bandsintown.com/t/1020634814?app_id=aaa&came_from=267&utm_medium=api&utm_source=public_api&utm_campaign=ticket",
+        "status": "available"
+      }
+    ],
+    "venue": {
+      "country": "United States",
+      "city": "Chula Vista",
+      "latitude": "32.58774339999999",
+      "name": "North Island Credit Union Amphitheatre",
+      "location": "Chula Vista, CA",
+      "region": "CA",
+      "longitude": "-117.0063651"
+    },
+    "datetime": "2021-07-15T19:00:00",
+    "artist": {
+      "thumb_url": "https://photos.bandsintown.com/thumb/8479721.jpeg",
+      "mbid": "0ab49580-c84f-44d4-875f-d83760ea2cfe",
+      "support_url": "",
+      "facebook_page_url": "http://www.facebook.com/5330548481",
+      "image_url": "https://photos.bandsintown.com/large/8479721.jpeg",
+      "name": "Maroon 5",
+      "options": {
+        "display_listen_unit": false
+      },
+      "id": "510",
+      "tracker_count": 5755084.0,
+      "upcoming_event_count": 40.0,
+      "url": "https://www.bandsintown.com/a/510?came_from=267&app_id=aaa"
+    },
+    "on_sale_datetime": "2019-12-13T12:00:00",
+    "description": "Rain or shine. Every ticket includes parking in the unpaved lots. General parking gates typically open at 4PM on day of show. Upgrades are available for premier parking in the paved lots and closer to the venue entrance. Upgrades are also available for Early Bird Tailgate Lot which grants access to park 2 hours prior up until general parking gates open.",
+    "lineup": ["Maroon 5", "Meghan Trainor"],
+    "id": "1020634814",
+    "title": "",
+    "artist_id": "510",
+    "url": "https://www.bandsintown.com/e/1020634814?app_id=aaa&came_from=267&utm_medium=api&utm_source=public_api&utm_campaign=event"
+  },
+  {
+    "offers": [
+      {
+        "type": "Tickets",
+        "url": "https://www.bandsintown.com/t/1020635122?app_id=aaa&came_from=267&utm_medium=api&utm_source=public_api&utm_campaign=ticket",
+        "status": "available"
+      }
+    ],
+    "venue": {
+      "country": "United States",
+      "city": "Albuquerque",
+      "latitude": "34.998181",
+      "name": "Isleta Amphitheater",
+      "location": "Albuquerque, NM",
+      "region": "NM",
+      "longitude": "-106.621937"
+    },
+    "datetime": "2021-07-17T19:00:00",
+    "on_sale_datetime": "2019-12-13T12:00:00",
+    "description": "For Box, Suite and Season Ticket information see below link",
+    "lineup": ["Maroon 5"],
+    "id": "1020635122",
+    "title": "",
+    "artist_id": "510",
+    "url": "https://www.bandsintown.com/e/1020635122?app_id=aaa&came_from=267&utm_medium=api&utm_source=public_api&utm_campaign=event"
+  },
+  {
+    "offers": [
+      {
+        "type": "Tickets",
+        "url": "https://www.bandsintown.com/t/1020632474?app_id=aaa&came_from=267&utm_medium=api&utm_source=public_api&utm_campaign=ticket",
+        "status": "available"
+      }
+    ],
+    "venue": {
+      "country": "United States",
+      "city": "Denver",
+      "latitude": "39.7486389",
+      "name": "Pepsi Center",
+      "location": "Denver, CO",
+      "region": "CO",
+      "longitude": "-105.0075285"
+    },
+    "datetime": "2021-07-21T19:30:00",
+    "on_sale_datetime": "2019-12-13T12:00:00",
+    "description": "To allow for more Card Members to enjoy the show, American Express has set a two-order limit for this offer. This limit applies across all Cards associated with all of your American Express accounts. Prepaid Cards are not eligible.",
+    "lineup": ["Maroon 5", "Meghan Trainor"],
+    "id": "1020632474",
+    "title": "",
+    "artist_id": "510",
+    "url": "https://www.bandsintown.com/e/1020632474?app_id=aaa&came_from=267&utm_medium=api&utm_source=public_api&utm_campaign=event"
+  },
+  {
+    "offers": [
+      {
+        "type": "Tickets",
+        "url": "https://www.bandsintown.com/t/1020635268?app_id=aaa&came_from=267&utm_medium=api&utm_source=public_api&utm_campaign=ticket",
+        "status": "available"
+      }
+    ],
+    "venue": {
+      "country": "United States",
+      "city": "West Valley City",
+      "latitude": "40.641233",
+      "name": "USANA Amphitheatre",
+      "location": "West Valley City, UT",
+      "region": "UT",
+      "longitude": "-112.013319"
+    },
+    "datetime": "2021-07-23T19:00:00",
+    "on_sale_datetime": "2019-12-13T12:00:00",
+    "description": "RAIN OR SHINE",
+    "lineup": ["Maroon 5"],
+    "id": "1020635268",
+    "title": "",
+    "artist_id": "510",
+    "url": "https://www.bandsintown.com/e/1020635268?app_id=aaa&came_from=267&utm_medium=api&utm_source=public_api&utm_campaign=event"
+  },
+  {
+    "offers": [
+      {
+        "type": "Tickets",
+        "url": "https://www.bandsintown.com/t/1020634374?app_id=aaa&came_from=267&utm_medium=api&utm_source=public_api&utm_campaign=ticket",
+        "status": "available"
+      }
+    ],
+    "venue": {
+      "country": "United States",
+      "city": "Mountain View",
+      "latitude": "37.4268129",
+      "name": "Shoreline Amphitheatre",
+      "location": "Mountain View, CA",
+      "region": "CA",
+      "longitude": "-122.08077109999999"
+    },
+    "datetime": "2021-07-25T19:00:00",
+    "on_sale_datetime": "2019-12-13T12:00:00",
+    "description": "",
+    "lineup": ["Maroon 5"],
+    "id": "1020634374",
+    "title": "",
+    "artist_id": "510",
+    "url": "https://www.bandsintown.com/e/1020634374?app_id=aaa&came_from=267&utm_medium=api&utm_source=public_api&utm_campaign=event"
+  },
+  {
+    "offers": [
+      {
+        "type": "Tickets",
+        "url": "https://www.bandsintown.com/t/1020635044?app_id=aaa&came_from=267&utm_medium=api&utm_source=public_api&utm_campaign=ticket",
+        "status": "available"
+      }
+    ],
+    "venue": {
+      "country": "United States",
+      "city": "Concord",
+      "latitude": "37.960355",
+      "name": "Concord Pavilion",
+      "location": "Concord, CA",
+      "region": "CA",
+      "longitude": "-121.939656"
+    },
+    "datetime": "2021-07-26T19:00:00",
+    "on_sale_datetime": "2020-01-24T09:00:00",
+    "description": "",
+    "lineup": ["Maroon 5"],
+    "id": "1020635044",
+    "title": "",
+    "artist_id": "510",
+    "url": "https://www.bandsintown.com/e/1020635044?app_id=aaa&came_from=267&utm_medium=api&utm_source=public_api&utm_campaign=event"
+  },
+  {
+    "offers": [
+      {
+        "type": "Tickets",
+        "url": "https://www.bandsintown.com/t/1020634953?app_id=aaa&came_from=267&utm_medium=api&utm_source=public_api&utm_campaign=ticket",
+        "status": "available"
+      }
+    ],
+    "venue": {
+      "country": "United States",
+      "city": "Portland",
+      "latitude": "45.531982",
+      "name": "Moda Center",
+      "location": "Portland, OR",
+      "region": "OR",
+      "longitude": "-122.667838"
+    },
+    "datetime": "2021-07-28T19:30:00",
+    "on_sale_datetime": "2019-12-13T12:00:00",
+    "description": "",
+    "lineup": ["Maroon 5"],
+    "id": "1020634953",
+    "title": "",
+    "artist_id": "510",
+    "url": "https://www.bandsintown.com/e/1020634953?app_id=aaa&came_from=267&utm_medium=api&utm_source=public_api&utm_campaign=event"
+  },
+  {
+    "offers": [
+      {
+        "type": "Tickets",
+        "url": "https://www.bandsintown.com/t/1020635101?app_id=aaa&came_from=267&utm_medium=api&utm_source=public_api&utm_campaign=ticket",
+        "status": "available"
+      }
+    ],
+    "venue": {
+      "country": "United States",
+      "city": "Auburn",
+      "latitude": "47.236844",
+      "name": "White River Amphitheatre",
+      "location": "Auburn, WA",
+      "region": "WA",
+      "longitude": "-122.108004"
+    },
+    "datetime": "2021-07-30T19:00:00",
+    "on_sale_datetime": "2019-12-13T12:00:00",
+    "description": "",
+    "lineup": ["Maroon 5"],
+    "id": "1020635101",
+    "title": "",
+    "artist_id": "510",
+    "url": "https://www.bandsintown.com/e/1020635101?app_id=aaa&came_from=267&utm_medium=api&utm_source=public_api&utm_campaign=event"
+  },
+  {
+    "offers": [
+      {
+        "type": "Tickets",
+        "url": "https://www.bandsintown.com/t/1020630488?app_id=aaa&came_from=267&utm_medium=api&utm_source=public_api&utm_campaign=ticket",
+        "status": "available"
+      }
+    ],
+    "venue": {
+      "country": "Canada",
+      "city": "Vancouver",
+      "latitude": "49.27783579999999",
+      "name": "Rogers Arena",
+      "location": "Vancouver, BC",
+      "region": "BC",
+      "longitude": "-123.10882270000002"
+    },
+    "datetime": "2021-07-31T19:30:00",
+    "on_sale_datetime": "2019-12-13T12:00:00",
+    "description": "",
+    "lineup": ["Maroon 5"],
+    "id": "1020630488",
+    "title": "",
+    "artist_id": "510",
+    "url": "https://www.bandsintown.com/e/1020630488?app_id=aaa&came_from=267&utm_medium=api&utm_source=public_api&utm_campaign=event"
+  },
+  {
+    "offers": [
+      {
+        "type": "Tickets",
+        "url": "https://www.bandsintown.com/t/1020630371?app_id=aaa&came_from=267&utm_medium=api&utm_source=public_api&utm_campaign=ticket",
+        "status": "available"
+      }
+    ],
+    "venue": {
+      "country": "Canada",
+      "city": "Edmonton",
+      "latitude": "53.546911",
+      "name": "Rogers Place",
+      "location": "Edmonton, AB",
+      "region": "AB",
+      "longitude": "-113.497237"
+    },
+    "datetime": "2021-08-03T19:30:00",
+    "on_sale_datetime": "2019-12-13T12:00:00",
+    "description": "",
+    "lineup": ["Maroon 5"],
+    "id": "1020630371",
+    "title": "",
+    "artist_id": "510",
+    "url": "https://www.bandsintown.com/e/1020630371?app_id=aaa&came_from=267&utm_medium=api&utm_source=public_api&utm_campaign=event"
+  },
+  {
+    "offers": [
+      {
+        "type": "Tickets",
+        "url": "https://www.bandsintown.com/t/1020634961?app_id=aaa&came_from=267&utm_medium=api&utm_source=public_api&utm_campaign=ticket",
+        "status": "available"
+      }
+    ],
+    "venue": {
+      "country": "United States",
+      "city": "Fargo",
+      "latitude": "46.902258",
+      "name": "Fargodome",
+      "location": "Fargo, ND",
+      "region": "ND",
+      "longitude": "-96.798062"
+    },
+    "datetime": "2021-08-06T19:30:00",
+    "on_sale_datetime": "2019-12-13T12:00:00",
+    "description": "",
+    "lineup": ["Maroon 5", "Meghan Trainor"],
+    "id": "1020634961",
+    "title": "",
+    "artist_id": "510",
+    "url": "https://www.bandsintown.com/e/1020634961?app_id=aaa&came_from=267&utm_medium=api&utm_source=public_api&utm_campaign=event"
+  },
+  {
+    "offers": [
+      {
+        "type": "Tickets",
+        "url": "https://www.bandsintown.com/t/1020634763?app_id=aaa&came_from=267&utm_medium=api&utm_source=public_api&utm_campaign=ticket",
+        "status": "available"
+      }
+    ],
+    "venue": {
+      "country": "United States",
+      "city": "St Paul",
+      "latitude": "44.94715",
+      "name": "Xcel Energy Center",
+      "location": "West Saint Paul, MN",
+      "region": "MN",
+      "longitude": "-93.086949"
+    },
+    "datetime": "2021-08-07T19:30:00",
+    "on_sale_datetime": "2019-12-13T12:00:00",
+    "description": "",
+    "lineup": ["Maroon 5", "Meghan Trainor"],
+    "id": "1020634763",
+    "title": "",
+    "artist_id": "510",
+    "url": "https://www.bandsintown.com/e/1020634763?app_id=aaa&came_from=267&utm_medium=api&utm_source=public_api&utm_campaign=event"
+  },
+  {
+    "offers": [
+      {
+        "type": "Tickets",
+        "url": "https://www.bandsintown.com/t/1020635012?app_id=aaa&came_from=267&utm_medium=api&utm_source=public_api&utm_campaign=ticket",
+        "status": "available"
+      }
+    ],
+    "venue": {
+      "country": "United States",
+      "city": "Milwaukee",
+      "latitude": "43.0272871",
+      "name": "American Family Insurance Amphitheater",
+      "location": "Milwaukee, WI",
+      "region": "WI",
+      "longitude": "-87.89749599999999"
+    },
+    "datetime": "2021-08-09T19:00:00",
+    "on_sale_datetime": "2019-12-13T12:00:00",
+    "description": "This event has been rescheduled for August 09, 2021 at 7:00pm.",
+    "lineup": ["Maroon 5"],
+    "id": "1020635012",
+    "title": "",
+    "artist_id": "510",
+    "url": "https://www.bandsintown.com/e/1020635012?app_id=aaa&came_from=267&utm_medium=api&utm_source=public_api&utm_campaign=event"
+  },
+  {
+    "offers": [
+      {
+        "type": "Tickets",
+        "url": "https://www.bandsintown.com/t/1020634850?app_id=aaa&came_from=267&utm_medium=api&utm_source=public_api&utm_campaign=ticket",
+        "status": "available"
+      }
+    ],
+    "venue": {
+      "country": "United States",
+      "city": "Lincoln",
+      "latitude": "40.816662",
+      "name": "Pinnacle Bank Arena",
+      "location": "Lincoln, NE",
+      "region": "NE",
+      "longitude": "-96.732857"
+    },
+    "datetime": "2021-08-11T19:30:00",
+    "on_sale_datetime": "2019-12-13T12:00:00",
+    "description": "",
+    "lineup": ["Maroon 5"],
+    "id": "1020634850",
+    "title": "",
+    "artist_id": "510",
+    "url": "https://www.bandsintown.com/e/1020634850?app_id=aaa&came_from=267&utm_medium=api&utm_source=public_api&utm_campaign=event"
+  },
+  {
+    "offers": [
+      {
+        "type": "Tickets",
+        "url": "https://www.bandsintown.com/t/1020630492?app_id=aaa&came_from=267&utm_medium=api&utm_source=public_api&utm_campaign=ticket",
+        "status": "available"
+      }
+    ],
+    "venue": {
+      "country": "United States",
+      "city": "Kansas City",
+      "latitude": "39.0974667",
+      "name": "T-Mobile Center",
+      "location": "Kansas City, MO",
+      "region": "MO",
+      "longitude": "-94.5801529"
+    },
+    "datetime": "2021-08-13T19:30:00",
+    "on_sale_datetime": "2019-12-13T12:00:00",
+    "description": "Maroon 5",
+    "lineup": ["Maroon 5"],
+    "id": "1020630492",
+    "title": "",
+    "artist_id": "510",
+    "url": "https://www.bandsintown.com/e/1020630492?app_id=aaa&came_from=267&utm_medium=api&utm_source=public_api&utm_campaign=event"
+  },
+  {
+    "offers": [
+      {
+        "type": "Tickets",
+        "url": "https://www.bandsintown.com/t/1020635216?app_id=aaa&came_from=267&utm_medium=api&utm_source=public_api&utm_campaign=ticket",
+        "status": "available"
+      }
+    ],
+    "venue": {
+      "country": "United States",
+      "city": "Oklahoma City",
+      "latitude": "35.4634175",
+      "name": "Chesapeake Energy Arena",
+      "location": "Oklahoma City, OK",
+      "region": "OK",
+      "longitude": "-97.5151176"
+    },
+    "datetime": "2021-08-14T19:30:00",
+    "on_sale_datetime": "2019-12-13T12:00:00",
+    "description": "",
+    "lineup": ["Maroon 5"],
+    "id": "1020635216",
+    "title": "",
+    "artist_id": "510",
+    "url": "https://www.bandsintown.com/e/1020635216?app_id=aaa&came_from=267&utm_medium=api&utm_source=public_api&utm_campaign=event"
+  },
+  {
+    "offers": [
+      {
+        "type": "Tickets",
+        "url": "https://www.bandsintown.com/t/1020634863?app_id=aaa&came_from=267&utm_medium=api&utm_source=public_api&utm_campaign=ticket",
+        "status": "available"
+      }
+    ],
+    "venue": {
+      "country": "United States",
+      "city": "Dallas",
+      "latitude": "32.77516620000001",
+      "name": "Dos Equis Pavilion",
+      "location": "Dallas, TX",
+      "region": "TX",
+      "longitude": "-96.7563981"
+    },
+    "datetime": "2021-08-16T19:00:00",
+    "on_sale_datetime": "2019-12-13T12:00:00",
+    "description": "",
+    "lineup": ["Maroon 5"],
+    "id": "1020634863",
+    "title": "",
+    "artist_id": "510",
+    "url": "https://www.bandsintown.com/e/1020634863?app_id=aaa&came_from=267&utm_medium=api&utm_source=public_api&utm_campaign=event"
+  },
+  {
+    "offers": [
+      {
+        "type": "Tickets",
+        "url": "https://www.bandsintown.com/t/1020634984?app_id=aaa&came_from=267&utm_medium=api&utm_source=public_api&utm_campaign=ticket",
+        "status": "available"
+      }
+    ],
+    "venue": {
+      "country": "United States",
+      "city": "North Little Rock",
+      "latitude": "34.754874",
+      "name": "Simmons Bank Arena",
+      "location": "North Little Rock, AR",
+      "region": "AR",
+      "longitude": "-92.2642956"
+    },
+    "datetime": "2021-08-18T19:30:00",
+    "on_sale_datetime": "2019-12-13T12:00:00",
+    "description": "",
+    "lineup": ["Maroon 5"],
+    "id": "1020634984",
+    "title": "",
+    "artist_id": "510",
+    "url": "https://www.bandsintown.com/e/1020634984?app_id=aaa&came_from=267&utm_medium=api&utm_source=public_api&utm_campaign=event"
+  },
+  {
+    "offers": [
+      {
+        "type": "Tickets",
+        "url": "https://www.bandsintown.com/t/1020634996?app_id=aaa&came_from=267&utm_medium=api&utm_source=public_api&utm_campaign=ticket",
+        "status": "available"
+      }
+    ],
+    "venue": {
+      "country": "United States",
+      "city": "Maryland Heights",
+      "latitude": "38.7443836",
+      "name": "Hollywood Casino Amphitheatre",
+      "location": "Maryland Heights, MO",
+      "region": "MO",
+      "longitude": "-90.46963319999998"
+    },
+    "datetime": "2021-08-20T19:00:00",
+    "on_sale_datetime": "2019-12-13T12:00:00",
+    "description": "Parking is included in the ticket price, just drive and park! Premier Parking is also available. Act today - You'll be able to arrive late and park close at the concert! You'll even have access to an efficient and dedicated exit at the end of the show! To request an interpreter for this show, please call 314-813-1533. Requests must be placed at least 3 weeks (21 days) before the show date. Interpreters can be placed either in front of the stage on the lower right side or on the lawn.",
+    "lineup": ["Maroon 5"],
+    "id": "1020634996",
+    "title": "",
+    "artist_id": "510",
+    "url": "https://www.bandsintown.com/e/1020634996?app_id=aaa&came_from=267&utm_medium=api&utm_source=public_api&utm_campaign=event"
+  },
+  {
+    "offers": [
+      {
+        "type": "Tickets",
+        "url": "https://www.bandsintown.com/t/1020635210?app_id=aaa&came_from=267&utm_medium=api&utm_source=public_api&utm_campaign=ticket",
+        "status": "available"
+      }
+    ],
+    "venue": {
+      "country": "United States",
+      "city": "Noblesville",
+      "latitude": "40.0049812",
+      "name": "Ruoff Music Center",
+      "location": "Noblesville, IN",
+      "region": "IN",
+      "longitude": "-85.93098880000002"
+    },
+    "datetime": "2021-08-21T19:00:00",
+    "on_sale_datetime": "2019-12-13T12:00:00",
+    "description": "General parking is included in the final purchase price. Premier Parking is also available for $40.00.",
+    "lineup": ["Maroon 5", "Meghan Trainor"],
+    "id": "1020635210",
+    "title": "",
+    "artist_id": "510",
+    "url": "https://www.bandsintown.com/e/1020635210?app_id=aaa&came_from=267&utm_medium=api&utm_source=public_api&utm_campaign=event"
+  },
+  {
+    "offers": [
+      {
+        "type": "Tickets",
+        "url": "https://www.bandsintown.com/t/1020635189?app_id=aaa&came_from=267&utm_medium=api&utm_source=public_api&utm_campaign=ticket",
+        "status": "available"
+      }
+    ],
+    "venue": {
+      "country": "United States",
+      "city": "Clarkston",
+      "latitude": "42.748783",
+      "name": "DTE Energy Music Theatre",
+      "location": "Clarkston, MI",
+      "region": "MI",
+      "longitude": "-83.380201"
+    },
+    "datetime": "2021-08-23T19:00:00",
+    "on_sale_datetime": "2019-12-13T12:00:00",
+    "description": "",
+    "lineup": ["Maroon 5"],
+    "id": "1020635189",
+    "title": "",
+    "artist_id": "510",
+    "url": "https://www.bandsintown.com/e/1020635189?app_id=aaa&came_from=267&utm_medium=api&utm_source=public_api&utm_campaign=event"
+  },
+  {
+    "offers": [
+      {
+        "type": "Tickets",
+        "url": "https://www.bandsintown.com/t/1020634791?app_id=aaa&came_from=267&utm_medium=api&utm_source=public_api&utm_campaign=ticket",
+        "status": "available"
+      }
+    ],
+    "venue": {
+      "country": "United States",
+      "city": "Cuyahoga Falls",
+      "latitude": "41.1913853",
+      "name": "Blossom Music Center",
+      "location": "Cuyahoga Falls, OH",
+      "region": "OH",
+      "longitude": "-81.56040229999996"
+    },
+    "datetime": "2021-08-26T19:00:00",
+    "on_sale_datetime": "2019-12-13T12:00:00",
+    "description": "",
+    "lineup": ["Maroon 5"],
+    "id": "1020634791",
+    "title": "",
+    "artist_id": "510",
+    "url": "https://www.bandsintown.com/e/1020634791?app_id=aaa&came_from=267&utm_medium=api&utm_source=public_api&utm_campaign=event"
+  },
+  {
+    "offers": [
+      {
+        "type": "Tickets",
+        "url": "https://www.bandsintown.com/t/1020634994?app_id=aaa&came_from=267&utm_medium=api&utm_source=public_api&utm_campaign=ticket",
+        "status": "available"
+      }
+    ],
+    "venue": {
+      "country": "United States",
+      "city": "Cincinnati",
+      "latitude": "39.05205830000001",
+      "name": "Riverbend Music Center",
+      "location": "Cincinnati, OH",
+      "region": "OH",
+      "longitude": "-84.41882579999998"
+    },
+    "datetime": "2021-08-28T19:00:00",
+    "on_sale_datetime": "2019-12-13T12:00:00",
+    "description": "General parking is included in the final purchase price",
+    "lineup": ["Maroon 5"],
+    "id": "1020634994",
+    "title": "",
+    "artist_id": "510",
+    "url": "https://www.bandsintown.com/e/1020634994?app_id=aaa&came_from=267&utm_medium=api&utm_source=public_api&utm_campaign=event"
+  },
+  {
+    "offers": [
+      {
+        "type": "Tickets",
+        "url": "https://www.bandsintown.com/t/1020634794?app_id=aaa&came_from=267&utm_medium=api&utm_source=public_api&utm_campaign=ticket",
+        "status": "available"
+      }
+    ],
+    "venue": {
+      "country": "United States",
+      "city": "Chicago",
+      "latitude": "41.9474536",
+      "name": "Wrigley Field",
+      "location": "Chicago, IL",
+      "region": "IL",
+      "longitude": "-87.6561341"
+    },
+    "datetime": "2021-08-30T18:30:00",
+    "on_sale_datetime": "2019-12-13T12:00:00",
+    "description": "",
+    "lineup": ["Maroon 5", "Meghan Trainor", "Leon Bridges"],
+    "id": "1020634794",
+    "title": "",
+    "artist_id": "510",
+    "url": "https://www.bandsintown.com/e/1020634794?app_id=aaa&came_from=267&utm_medium=api&utm_source=public_api&utm_campaign=event"
+  },
+  {
+    "offers": [
+      {
+        "type": "Tickets",
+        "url": "https://www.bandsintown.com/t/1020634882?app_id=aaa&came_from=267&utm_medium=api&utm_source=public_api&utm_campaign=ticket",
+        "status": "available"
+      }
+    ],
+    "venue": {
+      "country": "United States",
+      "city": "Darien Center",
+      "latitude": "42.9278518",
+      "name": "Six Flags Darien Lake",
+      "location": "Darien Center, NY",
+      "region": "NY",
+      "longitude": "-78.3822125"
+    },
+    "datetime": "2021-09-01T19:00:00",
+    "on_sale_datetime": "2019-12-13T12:00:00",
+    "description": "Event is rain or shine",
+    "lineup": ["Maroon 5"],
+    "id": "1020634882",
+    "title": "",
+    "artist_id": "510",
+    "url": "https://www.bandsintown.com/e/1020634882?app_id=aaa&came_from=267&utm_medium=api&utm_source=public_api&utm_campaign=event"
+  },
+  {
+    "offers": [
+      {
+        "type": "Tickets",
+        "url": "https://www.bandsintown.com/t/1020630418?app_id=aaa&came_from=267&utm_medium=api&utm_source=public_api&utm_campaign=ticket",
+        "status": "available"
+      }
+    ],
+    "venue": {
+      "country": "Canada",
+      "city": "Toronto",
+      "latitude": "43.6293322",
+      "name": "Budweiser Stage",
+      "location": "Toronto, ON",
+      "region": "ON",
+      "longitude": "-79.4150723"
+    },
+    "datetime": "2021-09-02T19:00:00",
+    "on_sale_datetime": "2019-12-13T12:00:00",
+    "description": "This is a RAIN OR SHINE Event DOORS: 5:30PM SHOW: 7:00PM",
+    "lineup": ["Maroon 5"],
+    "id": "1020630418",
+    "title": "",
+    "artist_id": "510",
+    "url": "https://www.bandsintown.com/e/1020630418?app_id=aaa&came_from=267&utm_medium=api&utm_source=public_api&utm_campaign=event"
+  },
+  {
+    "offers": [
+      {
+        "type": "Tickets",
+        "url": "https://www.bandsintown.com/t/1020634868?app_id=aaa&came_from=267&utm_medium=api&utm_source=public_api&utm_campaign=ticket",
+        "status": "available"
+      }
+    ],
+    "venue": {
+      "country": "United States",
+      "city": "Camden",
+      "latitude": "39.954535",
+      "name": "BB&T Pavilion",
+      "location": "Camden, NJ",
+      "region": "NJ",
+      "longitude": "-75.068983"
+    },
+    "datetime": "2021-09-04T19:00:00",
+    "on_sale_datetime": "2019-12-13T12:00:00",
+    "description": "",
+    "lineup": ["Maroon 5"],
+    "id": "1020634868",
+    "title": "",
+    "artist_id": "510",
+    "url": "https://www.bandsintown.com/e/1020634868?app_id=aaa&came_from=267&utm_medium=api&utm_source=public_api&utm_campaign=event"
+  },
+  {
+    "offers": [
+      {
+        "type": "Tickets",
+        "url": "https://www.bandsintown.com/t/1020635192?app_id=aaa&came_from=267&utm_medium=api&utm_source=public_api&utm_campaign=ticket",
+        "status": "available"
+      }
+    ],
+    "venue": {
+      "country": "United States",
+      "city": "Hershey",
+      "latitude": "40.29004690000001",
+      "name": "Hersheypark Stadium",
+      "location": "Hershey, PA",
+      "region": "PA",
+      "longitude": "-76.65884870000002"
+    },
+    "datetime": "2021-09-05T19:00:00",
+    "on_sale_datetime": "2019-12-13T12:00:00",
+    "description": "Patrons 2yrs and older require a ticket. Artist(s) subject to change. Due to security enhancements, please arrive at least 45-60 minutes prior to event time. Please only bring essential items with you. Hersheypark Stadium will only permit bags/backpacks that are 12\"x12\"x6\" or smaller and clear 1-gallon bags. Any bags/backpacks that are larger in size will need to be returned to the owners vehicle or disposed of. No audio/video recording. Rain Or Shine Tickets can be purchased online up until the event start time. After this time, if tickets are still available, they can be purchased at the Hersheypark Stadium Box Office.",
+    "lineup": ["Maroon 5"],
+    "id": "1020635192",
+    "title": "",
+    "artist_id": "510",
+    "url": "https://www.bandsintown.com/e/1020635192?app_id=aaa&came_from=267&utm_medium=api&utm_source=public_api&utm_campaign=event"
+  },
+  {
+    "offers": [
+      {
+        "type": "Tickets",
+        "url": "https://www.bandsintown.com/t/1020635011?app_id=aaa&came_from=267&utm_medium=api&utm_source=public_api&utm_campaign=ticket",
+        "status": "available"
+      }
+    ],
+    "venue": {
+      "country": "United States",
+      "city": "Bristow",
+      "latitude": "38.7853841",
+      "name": "Jiffy Lube Live",
+      "location": "Bristow, VA",
+      "region": "VA",
+      "longitude": "-77.5902982"
+    },
+    "datetime": "2021-09-07T19:00:00",
+    "on_sale_datetime": "2019-12-13T12:00:00",
+    "description": "",
+    "lineup": ["Maroon 5"],
+    "id": "1020635011",
+    "title": "",
+    "artist_id": "510",
+    "url": "https://www.bandsintown.com/e/1020635011?app_id=aaa&came_from=267&utm_medium=api&utm_source=public_api&utm_campaign=event"
+  },
+  {
+    "offers": [
+      {
+        "type": "Tickets",
+        "url": "https://www.bandsintown.com/t/1020634779?app_id=aaa&came_from=267&utm_medium=api&utm_source=public_api&utm_campaign=ticket",
+        "status": "available"
+      }
+    ],
+    "venue": {
+      "country": "United States",
+      "city": "New York",
+      "latitude": "40.7507387",
+      "name": "Madison Square Garden",
+      "location": "New York City, NY",
+      "region": "NY",
+      "longitude": "-73.9937978"
+    },
+    "datetime": "2021-09-10T19:30:00",
+    "on_sale_datetime": "2020-07-24T10:00:00",
+    "description": "",
+    "lineup": ["Maroon 5"],
+    "id": "1020634779",
+    "title": "",
+    "artist_id": "510",
+    "url": "https://www.bandsintown.com/e/1020634779?app_id=aaa&came_from=267&utm_medium=api&utm_source=public_api&utm_campaign=event"
+  },
+  {
+    "offers": [
+      {
+        "type": "Tickets",
+        "url": "https://www.bandsintown.com/t/1020634394?app_id=aaa&came_from=267&utm_medium=api&utm_source=public_api&utm_campaign=ticket",
+        "status": "available"
+      }
+    ],
+    "venue": {
+      "country": "United States",
+      "city": "Boston",
+      "latitude": "42.346522",
+      "name": "Fenway Park",
+      "location": "Boston, MA",
+      "region": "MA",
+      "longitude": "-71.09878"
+    },
+    "datetime": "2021-09-12T18:00:00",
+    "on_sale_datetime": "2019-12-20T12:00:00",
+    "description": "",
+    "lineup": ["Maroon 5", "Meghan Trainor", "Leon Bridges"],
+    "id": "1020634394",
+    "title": "",
+    "artist_id": "510",
+    "url": "https://www.bandsintown.com/e/1020634394?app_id=aaa&came_from=267&utm_medium=api&utm_source=public_api&utm_campaign=event"
+  },
+  {
+    "offers": [
+      {
+        "type": "Tickets",
+        "url": "https://www.bandsintown.com/t/1020635245?app_id=aaa&came_from=267&utm_medium=api&utm_source=public_api&utm_campaign=ticket",
+        "status": "available"
+      }
+    ],
+    "venue": {
+      "country": "United States",
+      "city": "Saratoga Springs",
+      "latitude": "43.055419",
+      "name": "Saratoga Performing Arts Center",
+      "location": "Saratoga Springs, NY",
+      "region": "NY",
+      "longitude": "-73.805927"
+    },
+    "datetime": "2021-09-13T19:00:00",
+    "on_sale_datetime": "2019-12-13T12:00:00",
+    "description": "Event is rain or shine",
+    "lineup": ["Maroon 5"],
+    "id": "1020635245",
+    "title": "",
+    "artist_id": "510",
+    "url": "https://www.bandsintown.com/e/1020635245?app_id=aaa&came_from=267&utm_medium=api&utm_source=public_api&utm_campaign=event"
+  },
+  {
+    "offers": [
+      {
+        "type": "Tickets",
+        "url": "https://www.bandsintown.com/t/1020635006?app_id=aaa&came_from=267&utm_medium=api&utm_source=public_api&utm_campaign=ticket",
+        "status": "available"
+      }
+    ],
+    "venue": {
+      "country": "United States",
+      "city": "Raleigh",
+      "latitude": "35.7493202",
+      "name": "Coastal Credit Union Music Park At Walnut Creek",
+      "location": "Raleigh, NC",
+      "region": "NC",
+      "longitude": "-78.5762494"
+    },
+    "datetime": "2021-09-15T19:00:00",
+    "on_sale_datetime": "2019-12-13T12:00:00",
+    "description": "For Box, Suite, and Season Ticket information please visit this link:",
+    "lineup": ["Maroon 5"],
+    "id": "1020635006",
+    "title": "",
+    "artist_id": "510",
+    "url": "https://www.bandsintown.com/e/1020635006?app_id=aaa&came_from=267&utm_medium=api&utm_source=public_api&utm_campaign=event"
+  },
+  {
+    "offers": [
+      {
+        "type": "Tickets",
+        "url": "https://www.bandsintown.com/t/1020635197?app_id=aaa&came_from=267&utm_medium=api&utm_source=public_api&utm_campaign=ticket",
+        "status": "available"
+      }
+    ],
+    "venue": {
+      "country": "United States",
+      "city": "Charlotte",
+      "latitude": "35.3273555",
+      "name": "PNC Music Pavilion",
+      "location": "Charlotte, NC",
+      "region": "NC",
+      "longitude": "-80.7105297"
+    },
+    "datetime": "2021-09-17T19:00:00",
+    "on_sale_datetime": "2019-12-13T12:00:00",
+    "description": "This is an outdoor venue with portions of the reserved seats under cover. The show will take place rain or shine. All dates, acts, & ticket prices subject to change without notice. All tickets are subject to applicable service fees via all points of sale. Children under 2 are free as long as they don't take up a seat.",
+    "lineup": ["Maroon 5", "Meghan Trainor"],
+    "id": "1020635197",
+    "title": "",
+    "artist_id": "510",
+    "url": "https://www.bandsintown.com/e/1020635197?app_id=aaa&came_from=267&utm_medium=api&utm_source=public_api&utm_campaign=event"
+  },
+  {
+    "offers": [
+      {
+        "type": "Tickets",
+        "url": "https://www.bandsintown.com/t/1020635133?app_id=aaa&came_from=267&utm_medium=api&utm_source=public_api&utm_campaign=ticket",
+        "status": "available"
+      }
+    ],
+    "venue": {
+      "country": "United States",
+      "city": "West Palm Beach",
+      "latitude": "26.685327",
+      "name": "iTHINK Financial Amphiteatre",
+      "location": "West Palm Beach, FL",
+      "region": "FL",
+      "longitude": "-80.18703219999999"
+    },
+    "datetime": "2021-09-23T19:00:00",
+    "on_sale_datetime": "2019-12-13T12:00:00",
+    "description": "Doors open at 5:30 PM. Rain or shine event.",
+    "lineup": ["Maroon 5"],
+    "id": "1020635133",
+    "title": "",
+    "artist_id": "510",
+    "url": "https://www.bandsintown.com/e/1020635133?app_id=aaa&came_from=267&utm_medium=api&utm_source=public_api&utm_campaign=event"
+  },
+  {
+    "offers": [
+      {
+        "type": "Tickets",
+        "url": "https://www.bandsintown.com/t/1020635095?app_id=aaa&came_from=267&utm_medium=api&utm_source=public_api&utm_campaign=ticket",
+        "status": "available"
+      }
+    ],
+    "venue": {
+      "country": "United States",
+      "city": "Tampa",
+      "latitude": "27.990157",
+      "name": "MIDFLORIDA Credit Union Amphitheatre",
+      "location": "Tampa, FL",
+      "region": "FL",
+      "longitude": "-82.358846"
+    },
+    "datetime": "2021-09-24T19:00:00",
+    "on_sale_datetime": "2019-12-13T12:00:00",
+    "description": "",
+    "lineup": ["Maroon 5"],
+    "id": "1020635095",
+    "title": "",
+    "artist_id": "510",
+    "url": "https://www.bandsintown.com/e/1020635095?app_id=aaa&came_from=267&utm_medium=api&utm_source=public_api&utm_campaign=event"
+  },
+  {
+    "offers": [
+      {
+        "type": "Tickets",
+        "url": "https://www.bandsintown.com/t/1020635172?app_id=aaa&came_from=267&utm_medium=api&utm_source=public_api&utm_campaign=ticket",
+        "status": "available"
+      }
+    ],
+    "venue": {
+      "country": "United States",
+      "city": "Austin",
+      "latitude": "30.134904",
+      "name": "Austin360 Amphitheater",
+      "location": "Austin, TX",
+      "region": "TX",
+      "longitude": "-97.644332"
+    },
+    "datetime": "2021-09-27T19:00:00",
+    "on_sale_datetime": "2019-12-13T19:00:00",
+    "description": "",
+    "lineup": ["Maroon 5"],
+    "id": "1020635172",
+    "title": "",
+    "artist_id": "510",
+    "url": "https://www.bandsintown.com/e/1020635172?app_id=aaa&came_from=267&utm_medium=api&utm_source=public_api&utm_campaign=event"
+  },
+  {
+    "offers": [
+      {
+        "type": "Tickets",
+        "url": "https://www.bandsintown.com/t/1020634959?app_id=aaa&came_from=267&utm_medium=api&utm_source=public_api&utm_campaign=ticket",
+        "status": "available"
+      }
+    ],
+    "venue": {
+      "country": "United States",
+      "city": "The Woodlands",
+      "latitude": "30.162475",
+      "name": "The Cynthia Woods Mitchell Pavilion",
+      "location": "The Woodlands, TX",
+      "region": "TX",
+      "longitude": "-95.462701"
+    },
+    "datetime": "2021-09-28T19:00:00",
+    "on_sale_datetime": "2019-12-13T12:00:00",
+    "description": "",
+    "lineup": ["Maroon 5"],
+    "id": "1020634959",
+    "title": "",
+    "artist_id": "510",
+    "url": "https://www.bandsintown.com/e/1020634959?app_id=aaa&came_from=267&utm_medium=api&utm_source=public_api&utm_campaign=event"
+  },
+  {
+    "offers": [
+      {
+        "type": "Tickets",
+        "url": "https://www.bandsintown.com/t/1020634780?app_id=aaa&came_from=267&utm_medium=api&utm_source=public_api&utm_campaign=ticket",
+        "status": "available"
+      }
+    ],
+    "venue": {
+      "country": "United States",
+      "city": "Phoenix",
+      "latitude": "33.4715603",
+      "name": "AK Chin Pavilion",
+      "location": "Phoenix, AZ",
+      "region": "AZ",
+      "longitude": "-112.23285229999999"
+    },
+    "datetime": "2021-10-01T19:00:00",
+    "on_sale_datetime": "2019-12-13T12:00:00",
+    "description": "For Box, Suite and Season Ticket information see below link",
+    "lineup": ["Maroon 5"],
+    "id": "1020634780",
+    "title": "",
+    "artist_id": "510",
+    "url": "https://www.bandsintown.com/e/1020634780?app_id=aaa&came_from=267&utm_medium=api&utm_source=public_api&utm_campaign=event"
+  },
+  {
+    "offers": [
+      {
+        "type": "Tickets",
+        "url": "https://www.bandsintown.com/t/1020634811?app_id=aaa&came_from=267&utm_medium=api&utm_source=public_api&utm_campaign=ticket",
+        "status": "available"
+      }
+    ],
+    "venue": {
+      "country": "United States",
+      "city": "Los Angeles",
+      "latitude": "34.0127708",
+      "name": "Banc of California Stadium",
+      "location": "Los Angeles, CA",
+      "region": "CA",
+      "longitude": "-118.2840845"
+    },
+    "datetime": "2021-10-02T19:00:00",
+    "on_sale_datetime": "2019-12-13T12:00:00",
+    "description": "",
+    "lineup": ["Maroon 5"],
+    "id": "1020634811",
+    "title": "",
+    "artist_id": "510",
+    "url": "https://www.bandsintown.com/e/1020634811?app_id=aaa&came_from=267&utm_medium=api&utm_source=public_api&utm_campaign=event"
+  }
+]

@@ -51,7 +51,11 @@ const ArtistCard = ({ artist, favorite }) => {
           <div className="artist-card-info-text">
             <h2>{name}</h2>
             {facebook && (
-              <NewTabLink name="facebookLink" url={facebook}>
+              <NewTabLink
+                name="facebookLink"
+                url={facebook}
+                className="btn-link"
+              >
                 Go to Facebook Page
               </NewTabLink>
             )}

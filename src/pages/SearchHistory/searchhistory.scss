@@ -1,0 +1,11 @@
+.recent-searches-page {
+  .artist-grid {
+    flex: 1;
+    @media screen and (max-width: 530px) {
+      .artist-grid_list_item {
+        justify-content: center;
+        width: 100%;
+      }
+    }
+  }
+}

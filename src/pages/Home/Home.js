@@ -73,31 +73,41 @@ const Home = (props) => {
 
   return (
     <div className={`home-page content ${loading ? "hide" : "show"}`}>
-      <div className="search">
-        <div className="search_form">
-          <h1>
-            Find <span>Events</span> by your
-            <br />
-            Favorite <span>Artists</span>.
-          </h1>
-          <h2>Search below to get started.</h2>
-          <SearchBar onSearch={onSearch} placeholder={"Search for an Artist"} />
+      <div className="page-container">
+        <div className="search">
+          <div className="search_form">
+            <h1>
+              Find <span>Events</span> by your
+              <br />
+              Favorite <span>Artists</span>.
+            </h1>
+            <h2>Search below to get started.</h2>
+            <SearchBar
+              onSearch={onSearch}
+              placeholder={"Search for an Artist"}
+            />
+          </div>
+          {renderSearchCard()}
         </div>
-        {renderSearchCard()}
-      </div>
-      <div className="suggestions no-scroll-bars">
-        <ArtistGrid
-          title="Recent Searches"
-          headerAction={() => history.push("/searchHistory")}
-          data={sortDSC(Object.values(searchHistory), "searchDate").slice(0, 5)}
-          artistClick={({ name }) => history.push(`/${name}/events`)}
-        />
-        <ArtistGrid
-          title="Favorites"
-          headerAction={() => history.push("/favorites")}
-          data={sortDSC(Object.values(favorites), "addDate").slice(0, 5)}
-          artistClick={({ name }) => history.push(`/${name}/events`)}
-        />
+        <div className="suggestions no-scroll-bars">
+          <ArtistGrid
+            title="Recent Searches"
+            actionTitle="See More"
+            headerAction={() => history.push("/searchHistory")}
+            data={sortDSC(Object.values(searchHistory), "searchDate").slice(
+              0,
+              5
+            )}
+            artistClick={({ name }) => history.push(`/${name}/events`)}
+          />
+          <ArtistGrid
+            title="Favorites"
+            actionTitle="See More"
+            headerAction={() => history.push("/favorites")}
+            data={sortDSC(Object.values(favorites), "addDate").slice(0, 5)}
+            artistClick={({ name }) => history.push(`/${name}/events`)}
+          />
+        </div>
       </div>
     </div>
   );

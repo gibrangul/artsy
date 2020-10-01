@@ -1,0 +1,29 @@
+[
+  {
+    "thumb_url": "https://photos.bandsintown.com/thumb/8285304.jpeg",
+    "mbid": "b95ce3ff-3d05-4e87-9e01-c97b66af13d4",
+    "support_url": "",
+    "facebook_page_url": "http://www.facebook.com/45309870078",
+    "image_url": "https://photos.bandsintown.com/large/8285304.jpeg",
+    "name": "Eminem",
+    "id": "1754",
+    "tracker_count": 7530715,
+    "upcoming_event_count": 0,
+    "url": "https://www.bandsintown.com/a/1754?came_from=267&app_id=aaa",
+    "searchDate": 1601526454,
+    "addDate": 1601526458
+  },
+  {
+    "thumb_url": "https://photos.bandsintown.com/thumb/8479721.jpeg",
+    "mbid": "0ab49580-c84f-44d4-875f-d83760ea2cfe",
+    "support_url": "",
+    "facebook_page_url": "http://www.facebook.com/5330548481",
+    "image_url": "https://photos.bandsintown.com/large/8479721.jpeg",
+    "name": "Maroon 5",
+    "id": "510",
+    "tracker_count": 5755601,
+    "upcoming_event_count": 40,
+    "url": "https://www.bandsintown.com/a/510?came_from=267&app_id=aaa",
+    "searchDate": 1601536821
+  }
+]

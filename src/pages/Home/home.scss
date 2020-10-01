@@ -1,9 +1,6 @@
 @import "../../styles/colors.scss";
 
 .home-page {
-  display: flex;
-  justify-content: center;
-  transition: all 200ms ease-in-out;
   .search {
     display: flex;
     flex-direction: column;
@@ -44,6 +41,9 @@
 
 @media screen and (max-width: 972px) {
   .home-page {
+    .page-container {
+      flex-direction: column;
+    }
     .suggestions {
       flex-direction: row;
       .artist-grid {
@@ -83,7 +83,6 @@
 
 @media screen and (max-width: 972px) and (min-width: 769px) {
   .home-page {
-    flex-direction: column;
     .search {
       flex-direction: row;
       align-items: center;
@@ -122,7 +121,6 @@
 
 @media screen and (max-width: 768px) {
   .home-page {
-    flex-direction: column;
     .search {
       width: 100%;
       margin-right: 0;
