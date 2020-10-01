@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, forwardRef } from "react";
 import "./filtersbar.scss";
 import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
@@ -8,14 +8,14 @@ const FiltersBar = ({ onFilter }) => {
   const [dateStart, setDateStart] = useState(null);
   const [dateEnd, setDateEnd] = useState(null);
 
-  const DateButton = ({ value, onClick, placeholder }) => (
+  const DateButton = forwardRef(({ value, onClick, placeholder }, ref) => (
     <button
       className="btn date-button bg-dark-200 calendar-icon"
       onClick={onClick}
     >
       {value ? value : <p>{placeholder}</p>}
     </button>
-  );
+  ));
 
   return (
     <form

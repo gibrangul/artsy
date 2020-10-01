@@ -1,8 +1,9 @@
 import React from "react";
 
-const NewTabLink = ({ url, children, className }) => {
+const NewTabLink = ({ name, url, children, className }) => {
   return (
     <a
+      name={name}
       href={url}
       target="_blank"
       rel="noopener noreferrer"

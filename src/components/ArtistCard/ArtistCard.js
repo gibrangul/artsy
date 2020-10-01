@@ -1,5 +1,6 @@
 import React from "react";
 import { useHistory } from "react-router-dom";
+import NewTabLink from "../NewTabLink";
 import likeIconFilledRed from "../../images/like-icon-filled-red.png";
 import likeIconRed from "../../images/like-icon-red.png";
 import "./artistcard.scss";
@@ -50,9 +51,9 @@ const ArtistCard = ({ artist, favorite }) => {
           <div className="artist-card-info-text">
             <h2>{name}</h2>
             {facebook && (
-              <a href={facebook} target="_blank" rel="noopener noreferrer">
+              <NewTabLink name="facebookLink" url={facebook}>
                 Go to Facebook Page
-              </a>
+              </NewTabLink>
             )}
           </div>
           <div className="artist-card-info-buttons">

@@ -4,7 +4,7 @@ import googleMapLink from "../../apis/googleMapLink";
 import locationIcon from "../../images/location-icon.png";
 import calendarIcon from "../../images/calendar-icon.png";
 import { dateSuperScript } from "../../utils/general";
-import NewTabLink from "./NewTabLink";
+import NewTabLink from "../NewTabLink";
 
 const EventsGridItem = ({ eventItem }) => {
   const { datetime, venue, url } = eventItem;
@@ -34,6 +34,7 @@ const EventsGridItem = ({ eventItem }) => {
           <div className="flex-column flex-align-start mb-8">
             <p className="bold mb-2">Event Location</p>
             <NewTabLink
+              name="googleMapsLink"
               url={googleMapLink(venue.latitude, venue.longitude)}
               className="btn btn-link"
             >
@@ -56,7 +57,7 @@ const EventsGridItem = ({ eventItem }) => {
           </div>
         </div>
       </div>
-      <NewTabLink url={url}>
+      <NewTabLink url={url} name="bookingLink">
         <button className="btn bg-dark-100 btn-hover-primary">Book Now</button>
       </NewTabLink>
     </div>
