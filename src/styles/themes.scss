@@ -2,6 +2,7 @@
   background-size: cover;
   background-repeat: no-repeat;
   a {
+    color: $color-primary;
     text-decoration: none;
     @media (hover: hover) and (pointer: fine) {
       &:hover {
