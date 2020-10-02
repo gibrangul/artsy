@@ -73,9 +73,9 @@ Keeping the initial premise in mind, i decided to choose the React + Redux appro
 **Pros:**
 
 1. Allowed CRUD ops down the line easier to manage through action creators and reducers.
-2. React does provide its on own context system for state management, however it lacks in comparison to Redux and its tooling.
-3. The Redux State changes remain hidden unless required by a specific components using the `useSelector` hook or `connect` HOC e.g the home page can re-render itself and update an element if that elements dataset changes.
-4. Reducers isolate their code i.e changes made to one part of the state (e.g the search history) wont affect another part (e.g favorites)
+2. React does provide its own context system for state management, however it lacks in comparison to Redux and its tooling.
+3. The Redux State changes remain hidden unless required by a specific component using the `useSelector` hook or `connect` HOC e.g the home page can re-render itself and update an element if that element dataset changes.
+4. Reducers isolate their code i.e changes made to one part of the state (e.g the search history) won't affect another part (e.g favorites)
 
 **Cons:**
 
@@ -122,7 +122,7 @@ The application pages can be further divided into 5 parts:
 State management can be divided into 2 parts:
 
 1. **Action Creators**\
-   Send data queried by the application to the store. E.g fetching the Artist from the API or the history from the local storage and sending it of to the store. (`actions` in the src directory)
+   Send data queried by the application to the store. E.g fetching the Artist from the API or the history from the local storage and sending it off to the store. (`actions` in the src directory)
 2. **Reducers**\
    Pure functions that update the store based on the data received from the action creators. (`reducers` in the src directory)
 
@@ -154,11 +154,15 @@ The app has been tested on the following browsers:\
 1. Chrome
 2. Mozilla Firefox
 3. Safari
-   **Phone** (iOS)
-4. Safari
-5. Chrome
+
+**Phone** (iOS)
+
+1. Safari
+2. Chrome
 
 ## Deployment Strategy
 
-Building on the Architectural premise of rapid deployments being a key factor in App development, the app has been deployed to Heroku with CircleCI being used for continuous integration and development. CircleCI connects to the master branch using Github, constantly checking for new commits. Every time a commit is made, CircleCI kicks in, deploying the application in a docker container to ensure that it is running correctly. CircleCI follows up by running all the Jest tests to ensure that the app doesn't break any requirements. Once the building and testing phase is successful, CircleCI pushes the app to Heroku which builds and deploys the application on a dyno. The demo link is the result of this deployment strategy.\
-This process blocks a broken build from being deployed, creating a safeguard where users wont have to deal with an erroneous Application along with ensuring rapid deployments with every commit.
+1. Building on the Architectural premise of rapid deployments being a key factor in App development, the app has been deployed to Heroku with CircleCI being used for continuous integration and development. CircleCI connects to the master branch using Github, constantly checking for new commits.
+2. Every time a commit is made, CircleCI kicks in, deploying the application in a docker container to ensure that it is running correctly. CircleCI follows up by running all the Jest tests to ensure that the app doesn't break any requirements.
+3. Once the building and testing phase is successful, CircleCI pushes the app to Heroku which builds and deploys the application on a dyno. The demo link is the result of this deployment strategy.
+4. This process blocks a broken build from being deployed, creating a safeguard where users won't have to deal with an erroneous Application along with ensuring rapid deployments with every commit.
