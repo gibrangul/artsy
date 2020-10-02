@@ -38,27 +38,42 @@ a {
   text-decoration: none;
   &:hover,
   &.selected {
-    color: #5d67ff;
+    color: #5d67ff !important;
   }
 }
 
 @media screen and (max-width: 768px) {
   .header {
     padding: 18px;
+    &-nav-list {
+      a {
+        margin-left: 24px;
+      }
+    }
   }
 }
 
-@media screen and (max-width: 420px) {
+@media screen and (max-width: 500px) {
   .header {
     flex-direction: column;
     align-items: flex-start;
+    position: relative;
 
     &-nav-list {
-      justify-content: space-evenly;
+      justify-content: space-between;
       margin-top: 18px;
       width: 100%;
       a {
         margin: 0;
+      }
+
+      .switch-container {
+        position: absolute;
+        top: 28px;
+        right: 18px;
+        p {
+          margin-right: 4px;
+        }
       }
     }
   }

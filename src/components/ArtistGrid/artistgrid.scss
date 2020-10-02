@@ -1,6 +1,6 @@
-$color-primary: #5d67ff;
+@import "../../styles/colors.scss";
+
 .artist-grid {
-  background-color: #202026;
   padding: 24px;
   // padding-bottom: 48px;
   border-radius: 8px;

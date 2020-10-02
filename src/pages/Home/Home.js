@@ -64,7 +64,7 @@ const Home = (props) => {
       );
     } else if (searching) {
       return (
-        <div className="artist-card flex-row flex-center">
+        <div className="artist-card flex-row flex-center bg-100 border-100">
           <SiteLoader loading={searching} />
         </div>
       );

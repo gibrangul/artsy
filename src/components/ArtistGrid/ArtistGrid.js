@@ -11,7 +11,7 @@ const ArtistGrid = ({
 }) => {
   if (data.length === 0) {
     return (
-      <div className="artist-grid" style={{ padding: "24px" }}>
+      <div className="artist-grid bg-100" style={{ padding: "24px" }}>
         <div className="artist-grid_header" style={{ marginBottom: 0 }}>
           <h3>Your {title} will appear here</h3>
         </div>
@@ -19,7 +19,7 @@ const ArtistGrid = ({
     );
   } else {
     return (
-      <div className="artist-grid">
+      <div className="artist-grid bg-100">
         <div className="artist-grid_header">
           <h3>{title}</h3>
           <button onClick={headerAction} className="btn btn-link">

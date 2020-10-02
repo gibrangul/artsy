@@ -21,7 +21,7 @@ const ArtistCard = ({ artist, favorite }) => {
 
   const renderError = () => {
     return (
-      <div className="artist-card flex-row flex-center">
+      <div className="artist-card bg-100 flex-row flex-center border-100">
         {error} Please Try again.
       </div>
     );
@@ -31,7 +31,7 @@ const ArtistCard = ({ artist, favorite }) => {
     return renderError();
   } else {
     return (
-      <div className="artist-card">
+      <div className="artist-card bg-100 border-100">
         <img alt={name} src={image_url} className="shadow-default" />
         <div className="overlay flex-row flex-center">
           {favorite && (

@@ -1,13 +1,41 @@
 .icon-24 {
   width: 24px;
   height: 24px;
+  background-size: 24px;
 }
 
 .icon-72 {
   width: 72px;
   height: 72px;
-
   &.btn-round-icon {
     background-size: 36px;
+  }
+}
+
+.container {
+  &__dark {
+    .calendar-icon {
+      background-image: url("../images/calendar-icon.png");
+    }
+    .location-icon {
+      background-image: url("../images/location-icon.png");
+    }
+
+    .search-icon {
+      background-image: url("../images/search-icon.png");
+    }
+  }
+
+  &__light {
+    .calendar-icon {
+      background-image: url("../images/calendar-icon-dark.png");
+    }
+    .location-icon {
+      background-image: url("../images/location-icon-dark.png");
+    }
+
+    .search-icon {
+      background-image: url("../images/search-icon-dark.png");
+    }
   }
 }

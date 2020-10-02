@@ -1,0 +1,113 @@
+.container {
+  &__dark {
+    background-image: linear-gradient(
+        0deg,
+        rgba(0, 0, 0, 0) 0%,
+        rgba(0, 0, 0, 0.6) 10%,
+        rgba(0, 0, 0, 1) 70%
+      ),
+      url("../images/bg1.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+    a {
+      color: white;
+      &:hover {
+        color: $color-primary;
+      }
+      &:visited {
+        color: none;
+      }
+    }
+
+    .input {
+      color: white;
+    }
+
+    .bg-100 {
+      background-color: $bg-dark-100;
+    }
+
+    .bg-200 {
+      background-color: $bg-dark-200;
+    }
+
+    .bg-300 {
+      background-color: $bg-dark-300;
+    }
+
+    .border-50 {
+      border-color: #4a4b4c;
+    }
+
+    .border-100 {
+      border-color: $bg-dark-100;
+    }
+
+    .divider {
+      background-color: white;
+    }
+
+    .shadow-default {
+      -webkit-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
+      -moz-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
+      box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
+    }
+  }
+
+  &__light {
+    background-image: linear-gradient(
+        0deg,
+        rgba(243, 245, 246, 0.4) 0%,
+        rgba(243, 245, 246, 0.6) 10%,
+        rgba(243, 245, 246, 1) 70%
+      ),
+      url("../images/bg2.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: #464e63;
+
+    a {
+      color: #464e63;
+      &:hover {
+        color: $color-primary;
+      }
+      &:visited {
+        color: none;
+      }
+    }
+    .input {
+      color: #464e63;
+    }
+
+    .bg-100 {
+      background-color: $bg-light-100;
+    }
+
+    .bg-200 {
+      background-color: $bg-light-100;
+    }
+
+    .bg-300 {
+      background-color: $bg-light-300;
+    }
+
+    .border-50 {
+      border-color: #e4e5e6;
+    }
+
+    .border-100 {
+      border-color: $bg-light-100;
+    }
+
+    .divider {
+      background-color: $bg-dark-300;
+    }
+
+    .shadow-default {
+      -webkit-box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.3);
+      -moz-box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.3);
+      box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.3);
+    }
+  }
+}

@@ -2,16 +2,18 @@
 .btn {
   cursor: pointer;
   border: none;
-  color: white;
+  color: $color-primary;
   padding: 12px 24px;
   border-radius: 8px;
   font-weight: 600;
   &:focus {
     outline: none;
   }
+  transition: all 200ms ease-in-out;
 }
 
 .btn-primary {
+  color: white;
   background-color: $color-primary;
   &:hover {
     background-color: darken($color-primary, 3%);
@@ -56,17 +58,17 @@
 
 .btn-hover-primary {
   &:hover {
-    background-color: $color-primary;
+    color: white;
+    background-color: $color-primary !important;
   }
 }
 
 .btn-link {
   background: none;
-  color: $color-primary;
-  padding: 0;
+  color: $color-primary !important;
+  padding: 0 !important;
   &:hover {
     color: darken($color-primary, 3%);
-    // text-decoration: underline;
   }
 }
 
@@ -98,6 +100,120 @@ a.btn-link {
 
   &:hover {
     transform: scale3d(1.1, 1.1, 1);
+  }
+}
+
+.ios-style-switch {
+  display: inline-block;
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.ios-style-switch i {
+  position: relative;
+  display: inline-block;
+  width: 46px;
+  height: 26px;
+  background-color: #e6e6e6;
+  border-radius: 23px;
+  vertical-align: text-bottom;
+  transition: all 0.3s linear;
+}
+
+.ios-style-switch i::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 42px;
+  height: 22px;
+  background-color: #fff;
+  border-radius: 11px;
+  transform: translate3d(2px, 2px, 0) scale3d(1, 1, 1);
+  transition: all 0.25s linear;
+}
+
+.ios-style-switch i::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 22px;
+  height: 22px;
+  background-color: #fff;
+  border-radius: 11px;
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.24);
+  transform: translate3d(2px, 2px, 0);
+  transition: all 0.2s ease-in-out;
+}
+
+.switch-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  .ios-style-switch {
+    display: inline-block;
+    cursor: pointer;
+    -webkit-tap-highlight-color: transparent;
+  }
+
+  .ios-style-switch i {
+    position: relative;
+    display: inline-block;
+    width: 46px;
+    height: 26px;
+    background-color: #e6e6e6;
+    border-radius: 23px;
+    vertical-align: text-bottom;
+    transition: all 0.3s linear;
+  }
+
+  .ios-style-switch i::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 42px;
+    height: 22px;
+    background-color: #fff;
+    border-radius: 11px;
+    transform: translate3d(2px, 2px, 0) scale3d(1, 1, 1);
+    transition: all 0.25s linear;
+  }
+
+  .ios-style-switch i::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 22px;
+    height: 22px;
+    background-color: #fff;
+    border-radius: 11px;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.24);
+    transform: translate3d(2px, 2px, 0);
+    transition: all 0.2s ease-in-out;
+  }
+
+  .ios-style-switch:active i::after {
+    width: 28px;
+    transform: translate3d(2px, 2px, 0);
+  }
+
+  .ios-style-switch:active input:checked + i::after {
+    transform: translate3d(16px, 2px, 0);
+  }
+
+  .ios-style-switch input {
+    display: none;
+  }
+
+  .ios-style-switch input:checked + i {
+    background-color: $color-primary;
+  }
+
+  .ios-style-switch input:checked + i::before {
+    transform: translate3d(18px, 2px, 0) scale3d(0, 0, 0);
+  }
+
+  .ios-style-switch input:checked + i::after {
+    transform: translate3d(22px, 2px, 0);
   }
 }
 

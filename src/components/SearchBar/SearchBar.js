@@ -17,7 +17,7 @@ const SearchBar = ({ onSearch, placeholder }) => {
         value={searchTerm}
         onChange={(e) => setSearchTerm(e.target.value)}
         placeholder={placeholder}
-        className="input input-li bg-dark-200"
+        className="input input-li bg-200 border-50 search-icon"
       />
       <button type="submit" className="btn btn-primary">
         Search

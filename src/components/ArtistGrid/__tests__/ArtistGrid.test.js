@@ -7,6 +7,7 @@ describe("Artist Grid", () => {
   let wrapped;
 
   const title = "Favorites";
+  const actionTitle = "See more";
   const data = [
     {
       thumb_url: "https://photos.bandsintown.com/thumb/8285304.jpeg",
@@ -25,7 +26,9 @@ describe("Artist Grid", () => {
   ];
 
   beforeEach(() => {
-    wrapped = shallow(<ArtistGrid title={title} data={data} />);
+    wrapped = shallow(
+      <ArtistGrid title={title} data={data} actionTitle={actionTitle} />
+    );
   });
 
   afterEach(() => {
@@ -40,7 +43,7 @@ describe("Artist Grid", () => {
 
   it("displays a header", (done) => {
     expect(wrapped.render().text()).toContain(title);
-    expect(wrapped.render().text()).toContain("See More");
+    expect(wrapped.render().text()).toContain(actionTitle);
     done();
   });
 

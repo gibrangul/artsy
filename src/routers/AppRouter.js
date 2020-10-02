@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { Router, Route, Switch } from "react-router-dom";
 import Header from "../components/Header/Header";
 import history from "../history";
@@ -8,11 +8,17 @@ import Home from "../pages/Home/Home";
 import SearchHistory from "../pages/SearchHistory/SearchHistory";
 
 const AppRouter = () => {
+  const defaultTheme = localStorage.getItem("theme") || "dark";
+  const [theme, setTheme] = useState(defaultTheme);
+  const changeTheme = (val) => {
+    setTheme(val);
+    localStorage.setItem("theme", val);
+  };
   return (
     <div>
       <Router history={history}>
-        <div className="container container__dark no-scroll-bars">
-          <Header />
+        <div className={`container container__${theme} no-scroll-bars`}>
+          <Header theme={theme} setTheme={changeTheme} />
           <Switch>
             <Route path="/" exact component={Home} />
             <Route path="/:artist/events" component={Events} />

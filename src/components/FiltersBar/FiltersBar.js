@@ -10,7 +10,7 @@ const FiltersBar = ({ onFilter }) => {
 
   const DateButton = forwardRef(({ value, onClick, placeholder }, ref) => (
     <button
-      className="btn date-button bg-dark-200 calendar-icon"
+      className="btn date-button border-50 bg-200 calendar-icon"
       onClick={onClick}
     >
       {value ? value : <p>{placeholder}</p>}
@@ -32,7 +32,7 @@ const FiltersBar = ({ onFilter }) => {
           setLocation(text);
         }}
         placeholder="Search for a Location e.g Venue, City, Country"
-        className="input input-li bg-dark-200 mr-8 location-icon"
+        className="input input-li bg-200 border-50 mr-8 location-icon"
       />
       <div className="filters-bar_buttons">
         <DatePicker
