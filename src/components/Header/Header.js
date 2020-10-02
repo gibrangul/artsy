@@ -29,9 +29,21 @@ const Header = ({ theme, setTheme }) => {
         </Link>
 
         <div className="header-nav-list">
+          <Link
+            to="/about"
+            className={`${location.pathname === "/about" ? "selected" : ""}`}
+          >
+            About
+          </Link>
+          <Link
+            to="/contact"
+            className={`${location.pathname === "/contact" ? "selected" : ""}`}
+          >
+            Contact
+          </Link>
           <div className="switch-container mt-2">
             <p className="semi-bold mr-16">Dark Mode</p>
-            <label class="ios-style-switch">
+            <label className="ios-style-switch">
               <input
                 type="checkbox"
                 checked={theme === "dark"}
@@ -46,24 +58,6 @@ const Header = ({ theme, setTheme }) => {
               <i></i>
             </label>
           </div>
-          <Link
-            to="/privacy"
-            className={`${location.pathname === "/privacy" ? "selected" : ""}`}
-          >
-            Privacy
-          </Link>
-          <Link
-            to="/about"
-            className={`${location.pathname === "/about" ? "selected" : ""}`}
-          >
-            About
-          </Link>
-          <Link
-            to="/contact"
-            className={`${location.pathname === "/contact" ? "selected" : ""}`}
-          >
-            Contact
-          </Link>
         </div>
       </div>
     </div>

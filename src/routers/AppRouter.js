@@ -2,6 +2,8 @@ import React, { useState } from "react";
 import { Router, Route, Switch } from "react-router-dom";
 import Header from "../components/Header/Header";
 import history from "../history";
+import About from "../pages/About/About";
+import Contact from "../pages/Contact/Contact";
 import Events from "../pages/Events/Events";
 import Favorites from "../pages/Favorites/Favorites";
 import Home from "../pages/Home/Home";
@@ -24,6 +26,8 @@ const AppRouter = () => {
             <Route path="/:artist/events" component={Events} />
             <Route path="/searchHistory" component={SearchHistory} />
             <Route path="/favorites" component={Favorites} />
+            <Route path="/about" component={About} />
+            <Route path="/contact" component={Contact} />
           </Switch>
         </div>
       </Router>

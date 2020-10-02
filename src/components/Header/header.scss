@@ -31,6 +31,9 @@
       margin-left: 48px;
       font-weight: 600;
     }
+    .switch-container {
+      margin-left: 48px;
+    }
   }
 }
 
@@ -46,7 +49,8 @@ a {
   .header {
     padding: 18px;
     &-nav-list {
-      a {
+      a,
+      .switch-container {
         margin-left: 24px;
       }
     }
@@ -60,20 +64,18 @@ a {
     position: relative;
 
     &-nav-list {
-      justify-content: space-between;
+      justify-content: flex-start;
       margin-top: 18px;
       width: 100%;
       a {
-        margin: 0;
+        margin-left: 0;
+        margin-right: 24px;
       }
 
       .switch-container {
         position: absolute;
         top: 28px;
         right: 18px;
-        p {
-          margin-right: 4px;
-        }
       }
     }
   }

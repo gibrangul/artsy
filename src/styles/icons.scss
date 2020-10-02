@@ -1,3 +1,9 @@
+.icon-18 {
+  width: 18px;
+  height: 18px;
+  background-size: 18px;
+}
+
 .icon-24 {
   width: 24px;
   height: 24px;
@@ -15,27 +21,43 @@
 .container {
   &__dark {
     .calendar-icon {
-      background-image: url("../images/calendar-icon.png");
-    }
-    .location-icon {
-      background-image: url("../images/location-icon.png");
-    }
-
-    .search-icon {
-      background-image: url("../images/search-icon.png");
-    }
-  }
-
-  &__light {
-    .calendar-icon {
       background-image: url("../images/calendar-icon-dark.png");
     }
     .location-icon {
       background-image: url("../images/location-icon-dark.png");
     }
-
     .search-icon {
       background-image: url("../images/search-icon-dark.png");
+    }
+    .email-icon {
+      background-image: url("../images/email-icon-dark.png");
+    }
+    .phone-icon {
+      background-image: url("../images/phone-icon-dark.png");
+    }
+    .address-icon {
+      background-image: url("../images/address-icon-dark.png");
+    }
+  }
+
+  &__light {
+    .calendar-icon {
+      background-image: url("../images/calendar-icon.png");
+    }
+    .location-icon {
+      background-image: url("../images/location-icon.png");
+    }
+    .search-icon {
+      background-image: url("../images/search-icon.png");
+    }
+    .email-icon {
+      background-image: url("../images/email-icon.png");
+    }
+    .phone-icon {
+      background-image: url("../images/phone-icon.png");
+    }
+    .address-icon {
+      background-image: url("../images/address-icon.png");
     }
   }
 }
