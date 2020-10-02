@@ -32,6 +32,9 @@ const store = makeMockStore({
 
 describe("Home Page", () => {
   let wrapped;
+  // jest.spyOn(React, "useRef").mockReturnValue({
+  //   current: null,
+  // });
 
   const artist = {
     thumb_url: "https://photos.bandsintown.com/thumb/7982772.jpeg",

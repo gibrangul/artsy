@@ -22,7 +22,6 @@ const Home = (props) => {
   const size = useWindowSize();
   const suggestionsRef = useRef(null);
   if (suggestionsRef.current) {
-    console.log(suggestionsRef);
     if (size.width > 972) {
       document.querySelector(".suggestions").style.height = `${
         size.height - 84
