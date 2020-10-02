@@ -29,6 +29,7 @@ html {
 
 .container {
   height: 100vh;
+  min-height: -webkit-fill-available;
   width: 100%;
   overflow: scroll;
   .content {
