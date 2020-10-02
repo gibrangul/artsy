@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, useRef } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { useHistory } from "react-router-dom";
 import {
@@ -13,12 +13,22 @@ import ArtistGrid from "../../components/ArtistGrid/ArtistGrid";
 import SearchBar from "../../components/SearchBar/SearchBar";
 import SiteLoader from "../../components/SiteLoader";
 import { sortDSC } from "../../utils/general";
+import useWindowSize from "../../utils/useWindowSize";
 import "./home.scss";
 
 const Home = (props) => {
   const dispatch = useDispatch();
   const history = useHistory();
-
+  const size = useWindowSize();
+  const suggestionsRef = useRef(null);
+  if (suggestionsRef.current) {
+    console.log(suggestionsRef);
+    if (size.width > 972) {
+      document.querySelector(".suggestions").style.height = `${
+        size.height - 84
+      }px`;
+    }
+  }
   const [searching, setSearching] = useState(false);
   const [loading, setLoading] = useState(true);
 
@@ -90,7 +100,7 @@ const Home = (props) => {
           </div>
           {renderSearchCard()}
         </div>
-        <div className="suggestions flex-1 no-scroll-bars">
+        <div ref={suggestionsRef} className="suggestions flex-1 no-scroll-bars">
           <ArtistGrid
             title="Recent Searches"
             actionTitle="See More"

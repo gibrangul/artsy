@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useRef } from "react";
 import { Router, Route, Switch, Redirect } from "react-router-dom";
 import Header from "../components/Header/Header";
 import history from "../history";
@@ -9,6 +9,7 @@ import Favorites from "../pages/Favorites/Favorites";
 import Home from "../pages/Home/Home";
 import NotFound from "../pages/NotFound/NotFound";
 import SearchHistory from "../pages/SearchHistory/SearchHistory";
+import useWindowSize from "../utils/useWindowSize";
 
 const AppRouter = () => {
   const defaultTheme = localStorage.getItem("theme") || "dark";
@@ -17,10 +18,20 @@ const AppRouter = () => {
     setTheme(val);
     localStorage.setItem("theme", val);
   };
+  const size = useWindowSize();
+  const containerRef = useRef(null);
+  if (containerRef.current) {
+    console.log(containerRef);
+    //   containerRef.current.offsetHeight = size.height;
+    document.querySelector(".container").style.height = `${size.height}px`;
+  }
   return (
     <div>
       <Router history={history}>
-        <div className={`container container__${theme} no-scroll-bars`}>
+        <div
+          ref={containerRef}
+          className={`container container__${theme} no-scroll-bars`}
+        >
           <Header theme={theme} setTheme={changeTheme} />
           <Switch>
             <Route path="/" exact component={Home} />

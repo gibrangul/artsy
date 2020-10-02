@@ -2,7 +2,6 @@
 html {
   font-family: "Open Sans", Helvetica, sans-serif;
   font-size: 16px;
-  height: -webkit-fill-available;
   p,
   h1,
   h2,
@@ -28,9 +27,9 @@ html {
 }
 
 .container {
-  height: 100vh;
-  min-height: 100vh;
-  min-height: -webkit-fill-available;
+  // height: 100vh;
+  // min-height: 100vh;
+  // min-height: -webkit-fill-available;
   width: 100%;
   overflow: scroll;
   .content {
