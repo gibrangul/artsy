@@ -28,30 +28,28 @@ describe("Header", () => {
     done();
   });
 
-  it("displays a privacy link", (done) => {
-    const logoLink = wrapped.findWhere(
-      (n) => n.name() === "Link" && n.prop("to") === "/privacy"
-    );
-    expect(logoLink.length).toEqual(1);
-    expect(logoLink.render().text()).toContain("Privacy");
+  it("displays a darkmode switch", (done) => {
+    const darkModeButton = wrapped.find(".switch-container");
+    expect(darkModeButton.length).toEqual(1);
+    expect(darkModeButton.render().text()).toContain("Dark Mode");
     done();
   });
 
   it("displays a about link", (done) => {
-    const logoLink = wrapped.findWhere(
+    const aboutLink = wrapped.findWhere(
       (n) => n.name() === "Link" && n.prop("to") === "/about"
     );
-    expect(logoLink.length).toEqual(1);
-    expect(logoLink.render().text()).toContain("About");
+    expect(aboutLink.length).toEqual(1);
+    expect(aboutLink.render().text()).toContain("About");
     done();
   });
 
   it("displays a contact link", (done) => {
-    const logoLink = wrapped.findWhere(
+    const contactLink = wrapped.findWhere(
       (n) => n.name() === "Link" && n.prop("to") === "/contact"
     );
-    expect(logoLink.length).toEqual(1);
-    expect(logoLink.render().text()).toContain("Contact");
+    expect(contactLink.length).toEqual(1);
+    expect(contactLink.render().text()).toContain("Contact");
     done();
   });
 });
