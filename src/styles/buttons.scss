@@ -15,41 +15,27 @@
 .btn-primary {
   color: white;
   background-color: $color-primary;
-  &:hover {
-    background-color: darken($color-primary, 3%);
+  @media (hover: hover) and (pointer: fine) {
+    &:hover {
+      background-color: darken($color-primary, 3%);
+    }
   }
+
   &-outline {
     background: none;
     border: 1px solid $color-primary;
-    &:hover {
-      background-color: $color-primary;
+    @media (hover: hover) and (pointer: fine) {
+      &:hover {
+        background-color: $color-primary;
+      }
     }
   }
 }
 
-.btn-red {
-  background-color: #ef453b;
-  &:hover {
-    background-color: darken(#ef453b, 3%);
-  }
-  &-outline {
-    background: none;
-    border: 1px solid #ef453b;
-    &:hover {
-      background-color: #ef453b;
-    }
-  }
-}
-
-.btn-white {
-  background-color: #fff;
-  color: #202026;
-  &:hover {
-    background-color: darken(#fff, 3%);
-  }
-  &-outline {
-    background: none;
-    border: 1px solid #fff;
+.btn-white-outline {
+  background: none;
+  border: 1px solid #fff;
+  @media (hover: hover) and (pointer: fine) {
     &:hover {
       background-color: #fff;
     }
@@ -57,9 +43,11 @@
 }
 
 .btn-hover-primary {
-  &:hover {
-    color: white;
-    background-color: $color-primary !important;
+  @media (hover: hover) and (pointer: fine) {
+    &:hover {
+      color: white;
+      background-color: $color-primary !important;
+    }
   }
 }
 
@@ -67,17 +55,6 @@
   background: none;
   color: $color-primary !important;
   padding: 0 !important;
-  &:hover {
-    color: darken($color-primary, 3%);
-  }
-}
-
-a.btn-link {
-  color: $color-primary;
-
-  &:visited {
-    color: $color-primary;
-  }
 }
 
 .btn-large {
@@ -96,10 +73,10 @@ a.btn-link {
   background: none;
   background-repeat: no-repeat;
   background-position: center;
-  transition: all 200ms ease-in-out;
-
-  &:hover {
-    transform: scale3d(1.1, 1.1, 1);
+  @media (hover: hover) and (pointer: fine) {
+    &:hover {
+      transform: scale3d(1.1, 1.1, 1);
+    }
   }
 }
 

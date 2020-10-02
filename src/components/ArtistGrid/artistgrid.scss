@@ -2,7 +2,6 @@
 
 .artist-grid {
   padding: 24px;
-  // padding-bottom: 48px;
   border-radius: 8px;
   display: flex;
   flex-direction: column;
@@ -61,10 +60,12 @@
         margin-right: 0;
       }
 
-      &:hover {
-        color: $color-primary;
-        img {
-          transform: scale3d(1.05, 1.05, 1);
+      @media (hover: hover) and (pointer: fine) {
+        &:hover {
+          color: $color-primary;
+          img {
+            transform: scale3d(1.05, 1.05, 1);
+          }
         }
       }
     }

@@ -8,15 +8,21 @@ const ArtistGrid = ({
   headerAction,
   data,
   artistClick,
+  showMessage,
 }) => {
   if (data.length === 0) {
-    return (
-      <div className="artist-grid bg-100" style={{ padding: "24px" }}>
-        <div className="artist-grid_header" style={{ marginBottom: 0 }}>
+    if (showMessage) {
+      return (
+        <div
+          className="artist-grid bg-100 flex-center"
+          style={{ maxHeight: "30px" }}
+        >
           <h3>Your {title} will appear here</h3>
         </div>
-      </div>
-    );
+      );
+    } else {
+      return null;
+    }
   } else {
     return (
       <div className="artist-grid bg-100">

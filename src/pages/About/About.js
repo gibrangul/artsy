@@ -33,8 +33,8 @@ const About = (props) => {
             Bandsintown
           </NewTabLink>
         }
-        , Artsy is search engine for upcoming events by your favorite muscians.
-        Artsy can help you find events from accross the globe. <br />
+        , Artsy is a search engine for upcoming events by your favorite
+        muscians. Artsy can help you find events from accross the globe. <br />
         Bookmark your favorite artists to keep track of events near you. Artsy
         saves your searches incase you forget your favorite artist's name (yes,
         it happens to the best of us).

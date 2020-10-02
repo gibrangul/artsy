@@ -1,4 +1,24 @@
 .container {
+  background-size: cover;
+  background-repeat: no-repeat;
+  a {
+    text-decoration: none;
+    @media (hover: hover) and (pointer: fine) {
+      &:hover {
+        color: $color-primary;
+      }
+    }
+    &.selected {
+      color: $color-primary !important;
+    }
+    &:visited {
+      color: $color-primary;
+    }
+
+    &.btn-primary {
+      color: white;
+    }
+  }
   &__dark {
     background-image: linear-gradient(
         0deg,
@@ -7,17 +27,11 @@
         rgba(0, 0, 0, 1) 70%
       ),
       url("../images/bg1.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
+
     color: white;
-    a {
+
+    .header a {
       color: white;
-      &:hover {
-        color: $color-primary;
-      }
-      &:visited {
-        color: none;
-      }
     }
 
     .input {
@@ -32,12 +46,8 @@
       background-color: $bg-dark-200;
     }
 
-    .bg-300 {
-      background-color: $bg-dark-300;
-    }
-
     .border-50 {
-      border-color: #4a4b4c;
+      border-color: $border-dark-50;
     }
 
     .border-100 {
@@ -55,13 +65,13 @@
     }
 
     .react-datepicker {
-      border: 1px solid #4a4b4c;
+      border: 1px solid $border-dark-50;
       background-color: $bg-dark-100;
       .react-datepicker__triangle {
         border-bottom-color: $bg-dark-100;
 
         &::before {
-          border-bottom-color: #4a4b4c;
+          border-bottom-color: $border-dark-50;
         }
       }
 
@@ -70,7 +80,7 @@
       }
       .react-datepicker__header {
         background-color: $bg-dark-200;
-        border-bottom: 1px solid #4a4b4c;
+        border-bottom: 1px solid $border-dark-50;
         .react-datepicker__current-month,
         .react-datepicker__day-name {
           color: white;
@@ -79,7 +89,11 @@
       .react-datepicker__month {
         .react-datepicker__day {
           color: white;
-          &:hover,
+          @media (hover: hover) and (pointer: fine) {
+            &:hover {
+              background-color: $color-primary;
+            }
+          }
           &--keyboard-selected,
           &--selected {
             background-color: $color-primary;
@@ -102,21 +116,13 @@
         rgba(243, 245, 246, 1) 70%
       ),
       url("../images/bg3.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    color: #464e63;
+    color: $color-text-light;
 
-    a {
-      color: #464e63;
-      &:hover {
-        color: $color-primary;
-      }
-      &:visited {
-        color: none;
-      }
+    .header a {
+      color: $color-text-light;
     }
     .input {
-      color: #464e63;
+      color: $color-text-light;
     }
 
     .bg-100 {
@@ -127,12 +133,8 @@
       background-color: $bg-light-100;
     }
 
-    .bg-300 {
-      background-color: $bg-light-300;
-    }
-
     .border-50 {
-      border-color: #e4e5e6;
+      border-color: $border-light-50;
     }
 
     .border-100 {
@@ -140,7 +142,7 @@
     }
 
     .divider {
-      background-color: $bg-dark-300;
+      background-color: $bg-dark-200;
     }
 
     .shadow-default {
@@ -155,7 +157,12 @@
       }
       .react-datepicker__month {
         .react-datepicker__day {
-          &:hover,
+          @media (hover: hover) and (pointer: fine) {
+            &:hover {
+              color: white;
+              background-color: $color-primary;
+            }
+          }
           &--keyboard-selected,
           &--selected {
             color: white;

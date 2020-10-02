@@ -23,6 +23,7 @@ const Favorites = (props) => {
     <div className={`favorites-page content ${loading ? "hide" : "show"}`}>
       <div className="page-container">
         <ArtistGrid
+          showMessage={true}
           title="Favorites"
           actionTitle="Clear Favorites"
           headerAction={() => dispatch(clearFavorites())}

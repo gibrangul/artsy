@@ -1,8 +1,5 @@
-.header-container {
-  display: flex;
-  width: 100%;
-  justify-content: center;
-}
+@import "../../styles/colors.scss";
+
 .header {
   flex: 1;
   display: flex;
@@ -10,26 +7,29 @@
   padding: 18px 36px;
   max-width: 1280px;
   .logo {
-    display: flex;
-    align-items: center;
     cursor: pointer;
-
-    margin-right: auto;
-    &-image {
-      width: 24px;
-      height: 24px;
-      padding: 12px 0;
-      margin-right: 12px;
-    }
-    &-name {
+    height: 48px;
+    background-size: 24px;
+    background-repeat: no-repeat;
+    background-position: 0 12px;
+    padding-left: 36px;
+    transition: all 200ms ease-in-out;
+    @media (hover: hover) and (pointer: fine) {
+      &:hover {
+        background-image: url("../../images/logo-purple-72.png");
+        color: $color-primary !important;
+      }
     }
   }
-  &-nav-list {
-    display: flex;
-    align-items: center;
+  .nav-list {
     a {
+      transition: all 200ms ease-in-out;
       margin-left: 48px;
-      font-weight: 600;
+      @media (hover: hover) and (pointer: fine) {
+        &:hover {
+          color: $color-primary !important;
+        }
+      }
     }
     .switch-container {
       margin-left: 48px;
@@ -37,18 +37,10 @@
   }
 }
 
-a {
-  text-decoration: none;
-  &:hover,
-  &.selected {
-    color: #5d67ff !important;
-  }
-}
-
 @media screen and (max-width: 768px) {
   .header {
     padding: 18px;
-    &-nav-list {
+    .nav-list {
       a,
       .switch-container {
         margin-left: 24px;
@@ -62,8 +54,7 @@ a {
     flex-direction: column;
     align-items: flex-start;
     position: relative;
-
-    &-nav-list {
+    .nav-list {
       justify-content: flex-start;
       margin-top: 18px;
       width: 100%;

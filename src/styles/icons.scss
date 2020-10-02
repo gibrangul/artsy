@@ -20,6 +20,9 @@
 
 .container {
   &__dark {
+    .logo {
+      background-image: url("../images/logo-dark-72.png");
+    }
     .calendar-icon {
       background-image: url("../images/calendar-icon-dark.png");
     }
@@ -41,6 +44,9 @@
   }
 
   &__light {
+    .logo {
+      background-image: url("../images/logo-72.png");
+    }
     .calendar-icon {
       background-image: url("../images/calendar-icon.png");
     }

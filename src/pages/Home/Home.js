@@ -43,13 +43,10 @@ const Home = (props) => {
     dispatch(fetchArtist(name));
   };
 
-  const onFavoriteClick = () => {
-    if (!favorites[artist.id]) {
-      dispatch(addToFavorites(artist));
-    } else {
-      dispatch(removeFromFavorites(artist.id));
-    }
-  };
+  const onFavoriteClick = () =>
+    !favorites[artist.id]
+      ? dispatch(addToFavorites(artist))
+      : dispatch(removeFromFavorites(artist.id));
 
   const renderSearchCard = () => {
     if (artist && !searching) {
@@ -71,17 +68,21 @@ const Home = (props) => {
     }
   };
 
+  const artistClick = ({ name }) => history.push(`/${name}/events`);
+
   return (
     <div className={`home-page content ${loading ? "hide" : "show"}`}>
       <div className="page-container">
         <div className="search">
-          <div className="search_form">
-            <h1>
-              Find <span>Events</span> by your
+          <div className="search_form flex-column">
+            <h1 className="mb-24">
+              Find <span className="primary-text">Events</span> by your
               <br />
-              Favorite <span>Artists</span>.
+              Favorite <span className="primary-text">Artists</span>.
             </h1>
-            <h2>Search below to get started.</h2>
+            <h2 className="semi-bold mb-16 text-secondary">
+              Search below to get started.
+            </h2>
             <SearchBar
               onSearch={onSearch}
               placeholder={"Search for an Artist"}
@@ -89,7 +90,7 @@ const Home = (props) => {
           </div>
           {renderSearchCard()}
         </div>
-        <div className="suggestions no-scroll-bars">
+        <div className="suggestions flex-1 no-scroll-bars">
           <ArtistGrid
             title="Recent Searches"
             actionTitle="See More"
@@ -98,14 +99,14 @@ const Home = (props) => {
               0,
               5
             )}
-            artistClick={({ name }) => history.push(`/${name}/events`)}
+            artistClick={artistClick}
           />
           <ArtistGrid
             title="Favorites"
             actionTitle="See More"
             headerAction={() => history.push("/favorites")}
             data={sortDSC(Object.values(favorites), "addDate").slice(0, 5)}
-            artistClick={({ name }) => history.push(`/${name}/events`)}
+            artistClick={artistClick}
           />
         </div>
       </div>

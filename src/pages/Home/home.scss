@@ -6,29 +6,14 @@
     flex-direction: column;
     margin-right: 48px;
     &_form {
-      display: flex;
-      flex-direction: column;
       margin-right: auto;
       height: 200px;
       width: 360px;
-      h1 {
-        margin-bottom: 24px;
-        span {
-          color: $color-primary;
-        }
-      }
-      h2 {
-        opacity: 0.8;
-        font-weight: 600;
-        margin-bottom: 18px;
-      }
     }
   }
 
   .suggestions {
     display: flex;
-    flex: 1;
-    max-width: 872px;
     flex-direction: column;
     overflow: scroll;
     height: calc(100vh - 84px);
@@ -45,11 +30,15 @@
       flex-direction: column;
     }
     .suggestions {
+      height: unset;
       flex-direction: row;
       .artist-grid {
         flex: 1;
         &:first-child {
           margin-right: 36px;
+        }
+        &:only-child {
+          margin-right: 0;
         }
         &_header {
           flex-direction: column;
@@ -146,7 +135,6 @@
 
     .suggestions {
       flex-direction: column;
-      max-width: 100%;
       .artist-grid {
         margin-right: 0 !important;
         margin-bottom: 12px;

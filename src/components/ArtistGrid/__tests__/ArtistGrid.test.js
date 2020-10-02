@@ -35,9 +35,19 @@ describe("Artist Grid", () => {
     wrapped.unmount();
   });
 
+  it("returns null when message is disabled", (done) => {
+    wrapped = shallow(
+      <ArtistGrid title={title} data={[]} showMessage={false} />
+    );
+    expect(wrapped.render().text()).toEqual("");
+    done();
+  });
+
   it("displays a message when there is no data", (done) => {
-    wrapped = shallow(<ArtistGrid title={title} data={[]} />);
-    expect(wrapped.render().text()).toContain(`Your ${title} will appear here`);
+    wrapped = shallow(
+      <ArtistGrid title={title} data={[]} showMessage={true} />
+    );
+    expect(wrapped.render().text()).toEqual(`Your ${title} will appear here`);
     done();
   });
 

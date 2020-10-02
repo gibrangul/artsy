@@ -2,7 +2,7 @@
 
 .filters-bar {
   display: flex;
-  .input-li.location-icon {
+  .input-li {
     flex: 1;
   }
 
@@ -40,7 +40,7 @@
         -webkit-box-shadow: inset 0px 0px 7px -1px rgba(93, 103, 255, 0.45);
         -moz-box-shadow: inset 0px 0px 7px -1px rgba(93, 103, 255, 0.45);
         box-shadow: inset 0px 0px 7px -1px rgba(93, 103, 255, 0.45);
-        border: 1px solid #5d67ff;
+        border: 1px solid $color-primary;
       }
     }
   }

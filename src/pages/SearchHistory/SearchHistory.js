@@ -25,6 +25,7 @@ const SearchHistory = (props) => {
     >
       <div className="page-container">
         <ArtistGrid
+          showMessage={true}
           title="Search History"
           actionTitle="Clear History"
           headerAction={() => dispatch(clearSearchHistory())}
