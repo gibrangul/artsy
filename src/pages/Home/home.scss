@@ -32,6 +32,7 @@
     .suggestions {
       height: unset;
       flex-direction: row;
+      overflow: unset;
       .artist-grid {
         flex: 1;
         &:first-child {
