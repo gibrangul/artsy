@@ -1,5 +1,5 @@
 import React, { useEffect, useState, useRef } from "react";
-import { useDispatch, useSelector } from "react-redux";
+import { Provider, useDispatch, useSelector } from "react-redux";
 import { useHistory } from "react-router-dom";
 import {
   addToFavorites,
@@ -26,6 +26,8 @@ const Home = (props) => {
       document.querySelector(".suggestions").style.height = `${
         size.height - 84
       }px`;
+    } else {
+      document.querySelector(".suggestions").style.height = `unset`;
     }
   }
   const [searching, setSearching] = useState(false);
@@ -99,7 +101,7 @@ const Home = (props) => {
           </div>
           {renderSearchCard()}
         </div>
-        <div ref={suggestionsRef} className="suggestions flex-1 no-scroll-bars">
+        <div ref={suggestionsRef} className="suggestions no-scroll-bars flex-1">
           <ArtistGrid
             title="Recent Searches"
             actionTitle="See More"
