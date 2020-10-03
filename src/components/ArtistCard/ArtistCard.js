@@ -21,7 +21,7 @@ const ArtistCard = ({ artist, favorite }) => {
 
   const renderError = () => {
     return (
-      <div className="artist-card bg-100 flex-row flex-center">
+      <div className="artist-card bg-100 flex-row flex-center border-100">
         {error} Please Try again.
       </div>
     );
