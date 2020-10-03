@@ -1,5 +1,5 @@
-import React, { useEffect, useState, useRef } from "react";
-import { Provider, useDispatch, useSelector } from "react-redux";
+import React, { useEffect, useState } from "react";
+import { useDispatch, useSelector } from "react-redux";
 import { useHistory } from "react-router-dom";
 import {
   addToFavorites,
@@ -13,23 +13,22 @@ import ArtistGrid from "../../components/ArtistGrid/ArtistGrid";
 import SearchBar from "../../components/SearchBar/SearchBar";
 import SiteLoader from "../../components/SiteLoader";
 import { sortDSC } from "../../utils/general";
-import useWindowSize from "../../utils/useWindowSize";
 import "./home.scss";
 
 const Home = (props) => {
   const dispatch = useDispatch();
   const history = useHistory();
-  const size = useWindowSize();
-  const suggestionsRef = useRef(null);
-  if (suggestionsRef.current) {
-    if (size.width > 972) {
-      document.querySelector(".suggestions").style.height = `${
-        size.height - 84
-      }px`;
-    } else {
-      document.querySelector(".suggestions").style.height = `unset`;
-    }
-  }
+  // const size = useWindowSize();
+  // const suggestionsRef = useRef(null);
+  // if (suggestionsRef.current) {
+  //   if (size.width > 972) {
+  //     document.querySelector(".suggestions").style.height = `${
+  //       size.height - 84
+  //     }px`;
+  //   } else {
+  //     document.querySelector(".suggestions").style.height = `unset`;
+  //   }
+  // }
   const [searching, setSearching] = useState(false);
   const [loading, setLoading] = useState(true);
 
@@ -101,7 +100,7 @@ const Home = (props) => {
           </div>
           {renderSearchCard()}
         </div>
-        <div ref={suggestionsRef} className="suggestions no-scroll-bars flex-1">
+        <div className="suggestions no-scroll-bars flex-1">
           <ArtistGrid
             title="Recent Searches"
             actionTitle="See More"

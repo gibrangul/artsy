@@ -17,10 +17,14 @@
     flex-direction: column;
     overflow: scroll;
     flex: 1;
-    // height: calc(100vh - 84px);
+
     .artist-grid {
       margin-top: 8px;
       margin-bottom: 40px;
+    }
+
+    @media screen and (min-width: 769px) {
+      height: calc(100vh - 84px);
     }
   }
 }
@@ -136,7 +140,6 @@
     }
 
     .suggestions {
-      flex-direction: column;
       display: block;
       .artist-grid {
         margin-right: 0 !important;

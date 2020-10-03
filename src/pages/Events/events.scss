@@ -25,6 +25,15 @@
       display: none;
     }
   }
+
+  .events-grid {
+    @media screen and (min-width: 1093px) {
+      height: calc(100vh - 150px);
+    }
+    @media screen and (max-width: 1092px) and(min-width:864px) {
+      height: calc(100vh - 216px);
+    }
+  }
 }
 
 @media screen and (max-width: 1092px) {

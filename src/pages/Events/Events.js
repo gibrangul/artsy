@@ -1,4 +1,4 @@
-import React, { Fragment, useEffect, useState, useRef } from "react";
+import React, { Fragment, useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { useHistory, useParams } from "react-router-dom";
 import {
@@ -15,7 +15,6 @@ import FiltersBar from "../../components/FiltersBar/FiltersBar";
 import SiteLoader from "../../components/SiteLoader";
 import "./events.scss";
 import eventsSelector from "./eventsSelector";
-import useWindowSize from "../../utils/useWindowSize";
 
 const Events = (props) => {
   const history = useHistory();
