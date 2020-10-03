@@ -18,11 +18,11 @@ const AppRouter = () => {
     setTheme(val);
     localStorage.setItem("theme", val);
   };
+  document.querySelector("html").style.backgroundColor =
+    theme === "dark" ? "#000000" : "#f3f5f6";
   const size = useWindowSize();
   const containerRef = useRef(null);
   if (containerRef.current) {
-    console.log(containerRef);
-    //   containerRef.current.offsetHeight = size.height;
     document.querySelector(".container").style.height = `${size.height}px`;
   }
   return (
