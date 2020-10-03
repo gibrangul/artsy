@@ -18,17 +18,6 @@ import "./home.scss";
 const Home = (props) => {
   const dispatch = useDispatch();
   const history = useHistory();
-  // const size = useWindowSize();
-  // const suggestionsRef = useRef(null);
-  // if (suggestionsRef.current) {
-  //   if (size.width > 972) {
-  //     document.querySelector(".suggestions").style.height = `${
-  //       size.height - 84
-  //     }px`;
-  //   } else {
-  //     document.querySelector(".suggestions").style.height = `unset`;
-  //   }
-  // }
   const [searching, setSearching] = useState(false);
   const [loading, setLoading] = useState(true);
 

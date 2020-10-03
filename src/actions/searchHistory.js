@@ -1,4 +1,3 @@
-// import getSearchHistory from "../utils/getSearchHistory";
 import { FETCH_SEARCH_HISTORY, CLEAR_SEARCH_HISTORY } from "./types";
 
 export const fetchSearchHistory = () => {

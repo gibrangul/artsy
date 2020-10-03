@@ -41,7 +41,6 @@ const Events = (props) => {
     dispatch(fetchSearchHistory());
     dispatch(fetchFavorites());
 
-    // Used a direct link to the events page is used
     if (!artist || artist.name !== artistName) {
       dispatch(fetchArtist(artistName));
     }
